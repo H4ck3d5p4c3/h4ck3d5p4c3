@@ -1,0 +1,3951 @@
+1.       A security analyst is troubleshooting a scenario in which an operator should only be allowed to reboot remote
+hosts but not perform other activities.
+The analyst inspects the following portions of different configuration files:
+Configuration file 1:
+operator ALL=/sbin/reboot
+Configuration file 2:
+command="/sbin/shutdown now " , no=x11-forwarding, no-pty, ssh-dss
+Configuration file 3:
+operator:x:1000:1000: : /home/operator:/bin/bash
+
+Which of the following explains why an intended operator cannot perform the intended action?
+
+A. the sudoers file is locked down to an innocent command
+B. SSH command shell restrictions are misconfigured
+C. the passwd file is misconfigured
+D. the SSH command is not allowing a pty session
+
+
+
+
+
+
+
+
+Answer:  D
+
+
+2.  A consultant is hired to perform a passive vulnerability assessment of a company to determine what
+information might be collected about the company and its employees. The assessment will be considered
+successful if the consultant can discover the name of one of the IT administrators.
+
+Which of the following is MOST likely to produce the needed information?
+
+A. Whois
+B. DNS enumeration
+C. Vulnerability scanner
+D. Fingerprinting
+
+
+
+Answer:  A
+
+
+3. The legal department has required that all traffic to and from a company's cloud-based word processing and
+email system is logged. To meet this requirement, the Chief Information Security Officer (CISO) has
+implemented a next-generation firewall to perform inspection of the secure traffic and has decided to use a
+cloud-based log aggregation solution for all traffic that is logged.
+
+Which of the following presents a long-term risk to user privacy in this scenario?
+
+A. Confidential or sensitive documents are inspected by the firewall before being logged
+B. Latency when viewing videos and other online content may increase
+C. Report generated from the firewall will take longer to produce due to more information from inspected
+traffic
+D. Stored logs may contain non-encrypted user names and passwords for personal website
+
+
+
+Answer:  D
+
+
+
+4. Two competing companies experienced similar attacks on their networks from various threat actors.
+To improve response times, the companies wish to share some threat intelligence about the sources and
+methods of attack.
+
+Which of the following business documents would be BEST to document this engagement?
+
+A. Business partnership agreement
+B. Memorandum of understanding
+C. Service-level agreement
+D. Interconnection security agreement
+
+
+
+Answer:  B
+
+
+5. Management is reviewing the results of a recent risk assessment of the organization’s policies and
+procedures. During the risk assessment it is determined that procedures associated with background checks
+have not been effectively implemented. In response to this risk, the organization elects to revise policies and
+procedures related to background checks and use a third-party to perform background checks on all new
+employees.
+
+Which of the following risk management strategies has the organization employed?
+
+A. Transfer
+B. Mitigate
+C. Accept
+D. Avoid
+E. Reject
+
+
+
+Answer:  B
+
+
+6. After multiple service interruptions caused by an older datacenter design, a company decided to migrate away
+from its datacenter. The company has successfully completed the migration of all datacenter servers and
+services to a cloud provider.
+The migration project includes the following phases:
+Selection of a cloud provider
+Architectural Design
+Microservice Segmentation
+Virtual Private Cloud
+Geographical Service Redundancy
+Service Migration
+The Chief Information Security Officer (CISO) is still concerned with the availability requirements of critical
+company applications.
+
+Which of the following should the company implement NEXT?
+
+A. Multicloud Solution
+B. Single-Tenancy Private Cloud
+C. Hybrid Cloud Solution
+D. Cloud Access Security Broker
+
+
+
+Answer:  D
+
+
+7. Security policies, which are in place at an organization, prohibit USB drives from being utilized across the
+entire enterprise, with adequate technical controls in place to block them. As a way to still be able to work from
+various locations on different computing resources, several sales staff members have signed up for a web-based
+storage solution without the consent of the IT department. However, the operations department is
+required to use the same service to transmit certain business partner documents.
+
+Which of the following would BEST allow the IT department to monitor and control this behavior?
+
+A. Enabling AAA
+B. Deploying a CASB
+C. Configuring an NGFW
+D. Installing a WAF
+E. Utilizing a vTPM
+
+
+
+
+Answer:  B
+
+
+8. A managed service provider is designing a log aggregation service for customers who no longer want to
+manage an internal SIEM infrastructure. The provider expects that customers will send all types of logs to
+them, and that log file could contain very sensitive entries. Customers have indicated they want on-premises
+and cloud-based infrastructure logs to be stores in this new service. An engineer, who is designing the new
+service, is deciding how to segment customers.
+
+Which of the following is the BEST statement for the engineer to take into consideration?
+
+A. Single-tenancy is often more expensive and has less efficient resource utilization. Multi-tenancy may
+increase the risk of cross-customer exposure in the event of service vulnerabilities
+
+B. The managed service provider should outsource security of the platform to an existing cloud company.
+This will allow the new log service to be launched faster and with well-tested security controls
+
+C. Due to the likelihood of large log volumes, the service providers should use a multi-tenancy model for the
+data storage tier, enable data deduplication for storage cost efficiencies, and encrypt data at rest
+
+D. The most secure design approach would be to give customers on-premises appliances, install agents on
+endpoints, and then remotely manage the service via a VPN
+
+
+
+Answer:  A
+
+
+9. A security technician is incorporating the following requirements in an RFP for a new SIEM:
+New security notifications must be dynamically implemented by the SIEM engine
+The SIEM must be able to identify traffic baseline anomalies
+Anonymous attack data from all customers must be augment attack detection and risk scoring.
+
+Based on the above requirements, which of the following should the SIEM support? (Select TWO).
+
+A. Autoscaling search capability
+B. Machine learning
+C. Multisensor deployment
+D. Big Data analytics
+E. Cloud-based management
+F. Centralized log aggregation
+
+
+
+Answer:  B,F
+
+10. A user workstation was infected with a new malware variant as a result of a drive-by download.
+The security administrator reviews the key controls on the infected workstation and discovers the following:
+
+Antivirus Enabled
+AV Engine Current
+AV Signatures Auto Update
+Update Status Success
+Heuristic Scanning Enabled
+Scan Type On Access Scanning
+Malware Engine Enabled
+Auto System Update Enabled
+Last System Update Yesterday 2 PM
+DLP Agent Disabled
+DLP DB Update Poll every 5 mins
+Proxy Settings Auto
+
+Which of the following would BEST prevent the problem from reoccurring in the future? (Select TWO).
+
+A. Install HIPS
+B. Enable DLP
+C. Install EDR
+D. Install HIDS
+E. Enable application blacklisting
+F. Improve patch management processes
+
+
+
+Answer:  B,C
+
+
+11. A security technician receives a copy of a report that was originally sent to the board of directors by the Chief
+Information Security Officer (CISO). The report outlines the following KPI/KRI data for the last 12 months:
+AV Fleet AV Signature Detected Phishing Infected Threat Landscape
+Number of Open
+Month Coverage Updated Attempts Systems Rating
+Security Incidents
+January 30% 100% 40 26 High
+40
+February 20% 100% 8 4 Low 40
+March 40% 100% 2 3 Low 30
+April 50% 98% 17 12 Medium
+30
+May 90% 98% 40 5 Low 20
+June 95% 98% 10 13 Medium
+30
+July 95% 98% 25 13 Medium
+30
+August 95% 96% 8 15 Medium
+40
+September 95% 90% 9 10 Medium
+50
+October 95% 90% 20 4 Low
+65
+November 95% 98% 17 7 Low
+75
+December 95% 100% 5 22 High
+85
+Which of the following BEST describes what could be interpreted from the above data?
+
+A. 1 AV coverage across the fleet improved
+2 There is no correlation between infected systems and AV coverage
+3 There is no correlation between detected phishing attempts and infected systems
+4 A correlation between threat landscape rating and infected systems appears to exist
+5 Effectiveness and performance of the security team appears to be degrading
+
+B. 1 AV signature coverage has remained consistently high
+2 AV coverage across the fleet improved
+3 A correlation between phishing attempts and infected systems appears to exist
+4 There is a correlation between the threat landscape rating and the security team's performance
+5 There is no correlation between detected phishing attempts and infected systems
+
+C. 1 There is no correlation between infected systems and AV coverage
+2 AV coverage across the fleet improved
+3 A correlation between phishing attempts and infected systems appears to exist
+4 There is no correlation between the threat landscape rating and the security team's performance
+5 There is a correlation between detected phishing attempts and infected systems
+
+D. 1 AV coverage across the fleet declined.
+2 There is no correlation between infected systems and AV coverage
+3 A correlation between phishing attempts and infected systems appears to exist
+4 There is no correlation between the threat landscape rating and the security team's performance
+5 Effectiveness and performance of the security team appears to be degrading
+
+
+
+Answer:  A
+
+
+12. A company has created a policy to allow employees to use their personally owned devices. The Chief
+Information Security Officer (CISO) is getting reports of company data appearing on unapproved forums and
+an increase in theft of personal electronic devices.
+
+Which of the following security controls would BEST reduce the risk of exposure?
+
+A. Disk encryption on the local drive
+B. Group policy to enforce failed login lockout
+C. Mutifactor authentication
+D. Implementation of email digital signatures
+
+
+
+
+Answer:  A
+
+
+13. A Chief information Security Officer (CISO) is reviewing and revising system configuration and hardening
+guides that were developed internally and have been used for several years to secure the organization's
+systems. The CISO knows improvements can be made to the guides.
+
+Which of the following would be the BEST source of reference during the revision process?
+
+A. CVE database
+B. Internal security assessment reports
+C. Industry-accepted standards
+D. External vulnerability scan reports
+E. Vendor-specific implementation guides
+
+
+
+Answer:  A
+
+
+14. A company that has been breached multiple times is looking to protect cardholder data. The previous
+undetected attacks all mimicked normal administrative-type behavior. The company must deploy a host
+solution to meet the following requirements:
+
+1 Detect administrative actions
+2 Block unwanted MD5 hashes
+3 Provide alerts
+4 Stop ex filtration of cardholder data.
+
+Which of the following solutions would BEST meet these requirements? (Select TWO)
+
+A. AV
+B. EDR
+C. HIDS
+D. DLP
+E. HIPS
+F. EFS
+
+
+
+Answer:  B,D
+
+
+15. Given the following information about a company's internal network:
+
+User IP space: 192.168.1.0/24 Server IP space: 192.168.192.0/25
+A security engineer has been told that there are rogue websites hosted outside of the proper server space, and
+those websites need to be identified.
+
+Which of the following should the engineer do?
+
+A. use a protocol analyzer 192.168.1.0/24
+B. use a port scanner on 192.168.1.0/24
+C. use an HTTP interceptor on 192.168.1.0/24
+D. use a port scanner on 192.168.1.0/25
+E. use a protocol analyzer on 192.168.1.0/25
+F. use an HTTP interceptor on 192.168.1.0/25
+
+
+
+Answer:  A
+
+
+16. A project manager is working with a software development group to collect and evaluate user stories related to the organization's internally designed CRM tool. After defining requirements, the project manager would like to validate the developer's interpretation and understanding of the user's request.
+
+Which of the following would BEST support this objective?
+
+A. Peer review
+B. Design review
+C. Scrum
+D. User acceptance testing
+E. Unit testing
+
+
+
+Answer:  B
+
+
+17. Which of the following BEST represents a risk associated with merging two enterprises during an acquisition?
+
+A. The consolidation of two different IT enterprises increases the likelihood of the data loss because there are
+now two backup systems
+
+B. Integrating two different IT systems might result in a successful data breach if threat intelligence is not
+shared between the two enterprises
+
+C. Merging two enterprise networks could result in an expanded attack surface and could cause outages if
+trust and permission issues are not handled carefully
+
+D. Expanding the set of data owners requires an in-depth review of all data classification decisions, impacting
+availability during the review
+
+
+
+
+Answer:  C
+
+
+18. An organization is currently working with a client to migrate data between a legacy ERP system and a cloud-based ERP tool using a global PaaS provider. As part of the engagement, the organization is performing data deduplication and sanitization of client data to ensure compliance with regulatory requirements.
+
+Which of the following is the MOST likely reason for the need to sanitize the client data?
+
+A. Data aggregation
+B. Data sovereignty
+C. Data isolation
+D. Data volume
+E. Data analytics
+
+
+
+Answer:  B
+
+
+19. At a meeting, the system administrator states the security controls a company wishes to implement seem
+excessive, since all of the information on the company's web server can be obtained publicly and is not
+proprietary in any way. The next day the company's website is defaced as part of an SQL injection attack, and
+the company receives press inquiries about the message the attackers displayed on the website.
+
+Which of the following is the FIRST action the company should take?
+
+A. Refer to and follow procedures form the company's incident response plan
+B. Call a press conference to explain that the company has been hacked
+C. Establish chain of custody for all systems to which systems administrator has access
+D. Conduct a detailed forensic analysis of the compromised system
+E. Inform the communication and marketing department of the attack details
+
+
+
+
+Answer:  A
+
+
+20. A company has decided to replace all the T-1 uplinks at each regional office and move away from using the
+existing MPLS network.
+All regional sites will use high-speed connections and VPNs to connect back to the main campus.
+
+Which of the following devices would MOST likely be added at each location?
+
+A. SIEM
+B. IDS/IPS
+C. Proxy server
+D. Firewall
+E. Router
+
+
+
+Answer:  D
+
+
+21. An organization is currently performing a market scan for managed security services and EDR capability.
+Which of the following business documents should be released to the prospective vendors in the first step of the process? (Select TWO)
+
+A. MSA
+B. RFP
+C. NDA
+D. RFI
+E. MOU
+F. RFQ
+
+
+
+Answer:  B,D
+
+
+22. A company is not familiar with the risk associated with IPv6. the systems administrator wants to isolate IPv4
+traffic from IPv6 traffic between two different network segments.
+
+Which of the following should the company implement? (Select TWO)
+
+A. Use an internal firewall to block UDP port 3544
+B. Disable network discovery protocol on all company routers
+C. Block IP protocol 41 using Layer 3 switches
+D. Disable the DHCP6 service from all routers
+E. Drop traffic for ::/0 at the edge firewall
+F. Implement a 6in4 proxy server
+
+
+
+Answer:  A,E
+
+
+23. The Chief Information Officer (CIO) wants to increase security and accessibility among the organization's
+cloud SaaS applications. The applications are configured to use passwords, and two-factor authentication is
+not provided natively.
+
+Which of the following would BEST address the CIO's concerns?
+
+A. Procure a password manager for the employees to use with the cloud applications
+B. Create a VPN tunnel between the on-premises environment and the cloud providers
+C. Deploy applications internally and migrate away from SaaS applications
+D. Implement an IdP that supports SAML and time-based, one-time passwords
+
+
+
+Answer:  D
+
+
+24. A financial consulting firm recently recovered from some damaging incidents that were associated with
+malware installed via rootkit. Post-incident analysis is ongoing, and the incident responders and systems
+administrators are working to determine a strategy to reduce the risk of recurrence. The firm’s systems are
+running modern operating systems and feature UEFI and TPMs.
+
+Which of the following technical options would provide the MOST preventive value?
+
+A. Update and deploy GPOs
+B. Configure and use measured boot
+C. Strengthen the password complexity requirements
+D. Update the antivirus software and definitions
+
+
+
+Answer:  B
+
+
+25. Which of the following is an external pressure that causes companies to hire security assessors and
+penetration testers?
+
+A. Lack of adequate in-house testing skills
+B. Requirements for geographically based assessments
+C. Cost reduction measures
+D. Regulatory insistence on independent reviews
+
+
+
+Answer:  D
+
+
+26. An information security manager is concerned that connectivity used to configure and troubleshoot critical
+network devices should be attacked.
+The manager has tasked a network security engineer with meeting the following requirements:
+
+Encrypt all traffic between the network engineer and critical devices
+Segregate the different networking planes as much as possible
+Do not let access ports impact configuration tasks
+
+Which of the following would be the BEST recommendation for the network security engineer to present?
+
+A. Deploy control plane protections
+B. Use SSH over out-of-band management
+C. Force only TACACS to be allowed
+D. Require the use of certificates for AAA
+
+
+
+Answer:  A
+
+
+27. A security engineer has implemented an internal user access review tool so service teams can baseline user
+accounts and group memberships. The tool is functional and popular among its initial set of onboarded teams.
+However, the tool has not been built to cater to a broader set of internal teams yet. The engineer has sought
+feedback from internal stakeholders, and a list of summarized requirements is as follows:
+
+The tool needs to be responsive so service teams can query it, and then perform an automated response
+action.
+The tool needs to be resilient to outages so service teams can perform the user access review at any point in
+time and meet their own SLAs.
+The tool will become the system-of-record for approval, reapproval, and removal life cycles of group
+memberships and must allow for data retrieval after failure.
+
+Which of the following need specific attention to meet the requirements listed above? (Choose Three)
+
+A. Scalability
+B. Latency
+C. Availability
+D. Usability
+E. Recoverability
+F. Maintainability
+
+
+
+Answer:  B,C,E
+
+
+28. A security engineer has been hired to design a device that will enable the exfiltration of data from within a
+well-defended network perimeter during an authorized test. The device must bypass all firewalls and NIDS in
+place, as well as allow for the upload of commands from a centralized command and control server. The total
+cost of the device must be kept to a minimum in case the device is discovered during an assessment.
+
+Which of the following tools should the engineer load onto the device being designed?
+
+A. Custom firmware with rotating key generation
+B. Automatic MITM proxy
+C. TCP beacon broadcast software
+D. Reverse shell endpoint listener
+
+
+
+Answer:  D
+
+
+29. Given the following output from a local PC:
+
+C:\ipconfig
+Windows IP Configuration
+Wireless LAN adapter Wireless Network Connection
+Connection-Specific DNS Suffix Network Connection:
+Link-local IPv6 Address . . . . . : fe80::4551:67ba:77a6:62e1%11
+IPv4 Address . . . . . . . . . . . : 172.30.0.28
+Subnet Mask . . . . . . . . . . . . : 255.255.0.0
+Default Gateway . . . . . . . . . . : 172.30.0.5
+
+Which of the following ACLs on a stateful host based firewall would allow the PC to serve an intranet website?
+
+A. Allow 172.30.0.28:80 -> ANY
+B. Allow 172.30.0.28:80 -> 172.30.0.0/16
+C. Allow 172.30.0.28/16 -> 172.30.0.28:443
+D. Allow 172.30.0.28/16 -> 172.30.0.28:53
+
+
+
+Answer:  B
+
+
+
+30. A technician is configuring security options on the mobile device manager of users who often utilize public
+Internet connections while traveling.
+After ensuring that full disk encryption is enabled, which of the following security measures should the
+Technician take? (Select TWO)
+
+A. Require all mobile device backups to be encrypted
+B. Ensure all mobile devices back up using USB OTG
+C. Issue a remote wipe of corporate and personal partitions
+D. Restrict devices from making long-distance calls during business hours
+E. Implement an always-on VPN
+
+
+
+Answer:  A,E
+
+
+31. Given the following code snippet:
+SecCond = “1ss” SecStatus = false Try {
+If (SecStatus)
+SecCond = “2ss” Console.log (“ship to ship)
+Else
+SecCond = “normal operations” Console.log (“nothing to see here”)
+} catch € {
+SecCond = “abnormal operations” Console.log(e)
+Console.log (“Exception logged”)
+
+Which of the following failure modes would the code exhibit?
+
+A. Open
+B. Secure
+C. Halt
+D. Exception
+
+
+
+Answer:  A
+
+
+32. Company.org has requested a black-box security assessment be performed on key cyber terrain. One area of
+concern is the company's SMTP services. The security assessor wants to run reconnaissance before taking
+any additional action and wishes to determine which SMTP server is internet-facing.
+
+Which of the following commands should the assessor use to determine this information?
+
+A. dnsrecon -d company.org -t SOA
+B. dig company.org mx
+C. nc -v company.org
+D. whois company.org
+
+
+
+Answer:  B
+
+
+33. A bank is initiating the process of acquiring another smaller bank.
+Before negotiations happen between the organizations, which of the following business documents would be
+used as the FIRST step in the process?
+
+
+A. MOU
+B. OLA
+C. BPA
+D. NDA
+
+
+
+Answer:  D
+
+
+34. A systems administrator at a medical imaging company discovers protected health information (PHI) on a
+general purpose file server.
+
+Which of the following steps should the administrator take NEXT?
+
+A. Isolate all of the PHI on its own VLAN and keep it segregated at Layer 2
+B. Immediately encrypt all PHI with AES 256
+C. Delete all PHI from the network until the legal department is consulted
+D. Consult the legal department to determine legal requirements
+
+
+
+Answer:  D
+
+
+35. Following a recent data breach, a company has hired a new Chief Information Security Officer (CISO). The
+CISO is very concerned about the response time to the previous breach and wishes to know how the security
+team expects to react to a future attack.
+
+Which of the following is the BEST method to achieve this goal while minimizing disruption?
+
+A. Perform a black box assessment
+B. Hire an external red team audit
+C. Conduct a tabletop exercise
+D. Recreate the previous breach
+E. Conduct an external vulnerability assessment
+
+
+
+Answer:  C
+
+
+36. Legal counsel has notified the information security manager of a legal matter that will require the preservation
+of electronic records for 2000 sales force employees.
+Source records will be email, PC, network shares, and applications.
+
+After all restrictions have been lifted, which of the following should the information manager review?
+
+A. Data retention policy
+B. Legal hold
+C. Chain of custody
+D. Scope statement
+
+
+
+Answer:  B
+
+
+37. A database administrator is required to adhere to and implement privacy principles when executing daily
+tasks. A manager directs the administrator to reduce the number of unique instances of PII stored within an
+organization's systems to the greatest extent possible.
+Which of the following principles is being demonstrated?
+
+A. Administrator accountability
+B. PII security
+C. Record transparency
+D. Data minimization
+
+
+
+Answer:  D
+
+
+38. The Chief Information Security Officer (CISO) is concerned that certain systems administrators with privileged access may be reading other users' emails. Review of a tool's output shows the administrators have used web mail to log into users' inboxes.
+
+Which of the following tools would show this type of output?
+
+A. Log analysis tool
+B. Password cracker
+C. Command-line tool
+D. File integrity monitoring tool
+
+
+
+Answer:  A
+
+
+39. Following a security assessment, the Chief Information Security Officer (CISO) is reviewing the results of the
+assessment and evaluating potential risk treatment strategies. As part of the CISO's evaluation, a judgment of
+potential impact based on the identified risk is performed. To prioritize response actions. the CISO uses past
+experience to take into account the exposure as well as the external accessibility of weakness identified.
+
+Which of the following is the CISO performing?
+
+A. Documentation of lessons learned
+B. Quantitative risk assessment
+C. Qualitative assessment of risk
+D. Business impact scoring
+
+
+
+Answer:  C
+
+
+40. Ann, a member of the finance department at a large corporation, has submitted a suspicious email she
+received to the information security team. The team was not expecting an email from Ann, and it contains a
+PDF file inside a ZIP compressed archive. The information security team is not sure which files were opened.
+A security team member uses an air-gapped PC to open the ZIP and PDF, and it appears to be a social
+engineering attempt to deliver an exploit.
+
+Which of the following would provide greater insight on the potential impact of this attempted attack?
+
+A. Run an antivirus scan on the finance PC
+B. Use a protocol analyzer on the air-gapped PC
+C. Perform reverse engineering on the document
+D. Analyze network logs for unusual traffic
+E. Run a baseline analyzer against the user's computer
+
+
+
+Answer:  B
+
+
+41. A penetration tester is conducting an assessment on Comptia.org and runs the following command from a
+coffeeshop while connected to the public Internet:
+
+
+
+
+
+
+Which of the following should the penetration tester conclude about the command output?
+
+A. The public/private views on the Comptia.org DNS servers are misconfigured
+B. Comptia.org is running an older mail server, which may be vulnerable to exploits
+C. The DNS SPF records have not been updated for Comptia.org
+D. 192.168.102.67 is a backup mail server that may be more vulnerable to attack
+
+
+
+Answer:  A
+
+
+42. A security consultant is attempting to discover if the company is utilizing databases on client machines to
+store the customer data.
+The consultant reviews the following information:
+
+
+
+
+
+
+Which of the following commands would have provided this output? 
+
+A. arp -s
+B. netstat -a
+C. ifconfig -arp
+D. sqlmap –w
+
+
+
+Answer:  B
+
+
+43. An enterprise with global sites processes and exchanges highly sensitive information that is protected under
+several countries’ arms trafficking laws. There is new information that malicious nation-state-sponsored activities are targeting the use of encryption between the geographically disparate sites. The organization currently employs ECDSA and ECDH with P-384, SHA-384 and AES-256-GCM on VPNs between sites.
+
+Which of the following techniques would MOST likely improve the resilience of the enterprise to attack on cryptographic implementation?
+
+A. Add a second-layer VPN from a different vendor between sites
+B. Upgrade the cipher suite to use an authenticated AES mode of operation
+C. Use a stronger elliptic curve cryptography algorithm
+D. Implement an IDS with sensors inside (clear-text) and outside (cipher-text) of each tunnel between sites
+E. Ensure cryptographic modules are kept up to date from the vendor supplying them
+
+
+
+Answer:  E
+
+
+44. When reviewing KRIs of the email security appliance with the Chief Information Security Officer (CISO) of an
+insurance company, the security engineer noticed the following:
+       Month     Encrypted Email         Unencrypted Email                  Contains PII
+1
+2
+3
+4
+5
+
+Which of the following measured should the security engineer take to ensure PII is not intercepted in transit
+while also preventing interruption the business?
+
+A. Quarantine emails went to external domains containing PII and release after inspection
+B. Prevent PII from being sent to domains that allow users to sign up for free webmail
+C. Enable transport layer security on all outbound email communications and attachments
+D. Provide security awareness training regarding transmission of PII
+
+
+
+Answer:  C
+
+
+45. A security engineer is assisting a developer with input validation, and they are studying the following code
+block:
+
+String accountIdRegexp = "TODO, help!"
+private static final Pattern accountIdPattern = Pattern.compile ("accountIdRegexp") ; String accountId =
+request.getParameter ("accountNumber") ;
+if (!accountIdPattern.matcher (accountId) .matches () ( System.out.printIn ("account ID format incorrect") ;
+) else (
+// continue
+)
+
+The security engineer wants to ensure strong input validation is in place for customer-provided account
+identifiers. These identifiers are ten-digit numbers. The developer wants to ensure input validation is fast because a large number of people use the system.
+
+Which of the following would be the BEST advice for the security engineer to give to the developer?
+
+A. Replace code with Java-based type checks
+B. Parse input into an array
+C. Use regular expressions
+D. Canonicalize input into string objects before validation
+
+
+
+Answer:  C
+
+
+46. While investigating suspicious activity on a server, a security administrator runs the following report:
+File System Integrity Check Report
+Total number of files: 3321
+Added files: 12
+Removed files: 0
+Changed files: 1
+Change files: changed: /etc/passwd
+--------------------------------------------------------------------------
+Detailed information about changes:
+File: /etc/passwd
+Perm: -rw-r--r-- , -rw-r--rw-
+Hash :md5:ab8e9acb928dfac35de2ac2bef918cae, md5:def9a24cdb68deaf4cb15acfed93eedb
+In addition, the administrator notices changes to the /etc/shadow file that were not listed in the report.
+
+Which of the following BEST describe this scenario? (Select TWO).
+
+A. An attacker compromised the server and may have used a collision hash in the MD5 algorithm to hide the
+changes to the etc/shadow file
+B. An attacker compromised the server and may have also compromised the file integrity database to hide
+the changes to the /etc/shadow file
+C. An attacker compromised the server and may have installed a rootkit to always generate valid MD5
+hashes to hide the changes to the /etc/shadow file
+D. An attacker compromised the server and may have used MD5 collision hashes to generate valid
+passwords, allowing further access to administrator accounts on the server
+E. An attacker compromised the server and may have used SELinux mandatory access controls to hide the
+changes to the /etc/shadow file
+
+
+
+
+Answer:  A,B
+
+
+47. Ann, a terminated employee, left personal photos on a company-issued laptop and no longer has access to
+them. Ann emails her previous manager and asks to get her personal photos back.
+
+Which of the following BEST describes how the manager should respond?
+
+A. Determine if the data still exists by inspecting to ascertain if the laptop has already been wiped and if the
+storage team has recent backups
+B. Inform Ann that the laptop was for company data only and she should not have stored personal photos on
+a company asset
+C. Report the email because it may have been a spoofed request coming from an attacker who is trying to
+exfiltrate data from the company laptop
+D. Consult with the legal and/or human resources department and check company policies around
+employment and termination procedures
+
+
+
+Answer:  D
+
+
+48. Providers at a healthcare system with many geographically dispersed clinics have been fined five times this
+year after an auditor received notice of the following SMS messages:
+Date Subject Message
+1 5/12/2017 Change of room Patient John Doe is now in room 201
+2 5/12/2017 Prescription change Ann Smith - add 5mg
+3 5/13/2007 Appointment cancelled John Doe cancelled
+4 5/14/2017 Follow-up visit Ann Smith scheduled a follow-up
+5 5/20/2017 Emergency room Ann Doe - patient #37125 critical
+6 5/25/2017 Prescription overdose John Smith - patient #25637 in room 37
+
+Which of the following represents the BEST solution for preventing future fines?
+
+A. Implement a secure text-messaging application for mobile devices and workstations
+B. Write a policy requiring this information to be given over the phone only
+C. Provide a courier service to deliver sealed documents containing public health informatics
+D. Implement FTP services between clinics to transmit text documents with the information
+E. Implement a system that will tokenize patient numbers
+
+
+
+Answer:  A
+
+
+49. A systems security engineer is assisting an organization’s market survey team in reviewing requirements for
+an upcoming acquisition of mobile devices. The engineer expresses concern to the survey team about a particular class of devices that uses a separate SoC for baseband radio I/O.
+
+For which of the following reasons is the engineer concerned?
+
+A. These devices can communicate over networks older than HSPA+ and LTE standards, exposing device
+communications to poor encryptions routines
+B. The organization will be unable to restrict the use of NFC, electromagnetic induction, and Bluetooth
+technologies
+C. The associated firmware is more likely to remain out of date and potentially vulnerable
+D. The manufacturers of the baseband radios are unable to enforce mandatory access controls within their driver set
+
+
+
+Answer:  B
+
+
+50. An organization, which handles large volumes of PII, allows mobile devices that can process, store, and
+transmit PII and other sensitive data to be issued to employees. Security assessors can demonstrate recovery
+and decryption of remnant sensitive data from device storage after MDM issues a successful wipe command.
+
+Assuming availability of the controls, which of the following would BEST protect against the loss of sensitive
+data in the future?
+
+A. Implement a container that wraps PII data and stores keying material directly in the container's encrypted
+application space
+B. Use encryption keys for sensitive data stored in an eFuse-backed memory space that is blown during
+remote wipe
+C. Issue devices that employ a stronger algorithm for the authentication of sensitive data stored on them
+D. Procure devices that remove the bootloader binaries upon receipt of an MDM-issued remote wipe
+Command
+
+
+
+Answer:  B
+
+
+
+51. A security engineer is attempting to convey the importance of including job rotation in a company's standard
+security policies.
+
+Which of the following would be the BEST justification?
+
+A. Making employees rotate through jobs ensures succession plans can be implemented and prevents single
+points of failure
+B. Forcing different people to perform the same job minimizes the amount of time malicious actions go
+undetected by forcing malicious actors to attempt collusion between two or more people
+C. Administrators and engineers who perform multiple job functions throughout the day benefit from being
+cross-trained in new job areas
+D. It eliminates the need to share administrative account passwords because employees gain administrative
+rights as they rotate into a new job area
+
+
+
+Answer:  A
+
+
+52. Following a merger, the number of remote sites for a company has doubled to 52. The company has decided
+to secure each remote site with a NGFW to provide web filtering, NIDS/NIPS, and network antivirus. The CIO
+has requested that the security engineer provide recommendations on sizing for the firewall with the
+requirements that it be easy to manage and provide capacity for growth. The tables below provide information
+on a subset of remote sites and the firewall options:
+
+
+
+
+
+
+
+
+
+
+Which of the following would be the BEST option to recommend to the CIO?
+
+A. Vendor C for small remote sites, and Vendor B for large sites.
+B. Vendor B for all remote sites
+C. Vendor C for all remote sites
+D. Vendor A for all remote sites
+E. Vendor D for all remote sites
+
+
+
+
+Answer:  B
+
+
+
+53. A medical device company is implementing a new COTS antivirus solution in its manufacturing plant.
+All validated machines and instruments must be retested for interoperability with the new software.
+
+Which of the following would BEST ensure that the software and instruments are working as designed?
+
+A. System design documentation
+B. User acceptance testing
+C. Peer review
+D. Static code analysis testing
+E. Change control documentation
+
+
+
+Answer:  B
+
+
+54. A company wants to confirm sufficient executable space protection is in place for scenarios in which malware
+may be attempting buffer overflow attacks.
+
+Which of the following should the security engineer check?
+
+A. NX/XN
+B. ASLR
+C. strcpy
+D. ECC
+
+
+
+Answer:  A
+
+
+55. A business is growing and starting to branch out into other locations. in anticipation of opening an office in a
+different country, the Chief information Security Officer (CISO) and legal team agree they need to meet the
+following criteria regarding data to open the new office:
+
+Store taxation-related documents for five years
+Store customer addresses in an encrypted format
+Destroy customer information after one year
+Keep data only in the customer's home country
+
+Which of the following should the CISO implement to BEST meet these requirements? (Select THREE)
+
+A. Capacity planning policy
+B. Data retention policy
+C. Data classification standard
+D. Legal compliance policy
+E. Data sovereignty policy
+F. Backup policy
+G. Acceptable use policy
+H. Encryption standard
+
+
+
+Answer:  B,E,H
+
+
+56. A security architect is determining the best solution for a new project. The project is developing a new intranet
+with advanced authentication capabilities, SSO for users, and automated provisioning to streamline Day 1
+access to systems. The security architect has identified the following requirements:
+
+1 Information should be sourced from the trusted master data source.
+2 There must be future requirements for identity proofing of devices and users.
+3 A generic identity connector that can be reused must be developed.
+4 The current project scope is for internally hosted applications only.
+
+Which of the following solution building blocks should the security architect use to BEST meet the requirement?
+
+A. LDAP, multifactor authentication, oAuth, XACML
+B. AD, certificate-based authentication, Kerberos, SPML
+C. SAML, context-aware authentication, oAuth, WAYF
+D. NAC, radius, 802.1x, centralized active directory
+
+
+
+Answer:  D
+
+
+57. A security architect is working with a project team to deliver an important service that stores and processes
+customer banking details. The project, internally known as ProjectX is due to launch its first set of features
+publicly within a week, but the team has not been able to implement encryption at-at-rest of the customer
+records. The security architect is drafting an escalation email to senior leadership.
+
+
+Which of the following BEST conveys the business impact for senior leadership?
+
+
+A.      
+
+
+
+
+
+
+
+
+B.      
+
+
+
+
+
+
+
+C.      
+
+
+
+
+
+
+D. 
+
+
+
+
+
+
+
+
+
+
+
+
+Answer:  D
+
+
+58. Given the code snippet below:
+#include <stdio.h> int main (void) { char username [8] ;
+printf ("Enter your username: ") ; gets (username)
+printf ("\n";
+if (username == NULL) {
+printf ("you did not enter a username/n") ;
+}
+if strcmp (username, "admin") {
+printf ("%s", "Admin user, enter your physical token value: ") ;
+// rest of conditional logic here has been snipped for brevity
+} else {
+printf ("Standard user, enter your password: ") ;
+// rest of conditional logic here has been snipped for brevity
+}
+}
+Which of the following vulnerability types is the MOST concerning?
+
+A. Only short usernames are supported, which could result in brute forcing of credentials
+B. Buffer overflow in the username parameter could lead to a memory corruption vulnerability
+C. Hardcoded usernames with different code paths taken depend on which user is entered
+D. Format string vulnerability is present for administrators but not for standard users
+
+
+
+Answer:  D
+
+
+59. A security analyst has requested network engineers integrate sFlow into the SOC's overall monitoring picture.
+For this to be useful addition to the monitoring capabilities, which of the following must be considered by the
+engineering team?
+
+A. Effective deployment of network taps
+B. Overall bandwidth available at Internet PoP
+C. Optimal placement of log aggregators
+D. Availability of applications layer visualizers
+
+
+
+Answer:  A
+
+
+60. There have been several recent ransomware outbreaks at a company that have cost a significant amount of
+lost revenue. The security team has been tasked with finding a technical control mechanism that will meet the
+following requirements and aid in preventing these outbreaks:
+Stop malicious software that does not match a signature
+Report on instances of suspicious behavior
+Protect from previously unknown threats
+Augment existing security capabilities
+
+Which of the following tools would BEST meet these requirements?
+
+A. Host-based firewall
+B. EDR
+C. HIPS
+D. Patch management
+
+
+
+Answer:  B
+
+
+61. A security researcher is gathering information about a recent spike in the number of targeted attacks against
+multinational bans. The spike is on top of already sustained attacks against the banks. Some of the previous attacks have resulted in the loss of sensitive data, but as of yet the attackers have not successfully stolen any funds.
+
+Based on the information available to the researcher, which of the following is the MOST likely threat profile?
+
+A. Nation-state-sponsored attackers conducting espionage for strategic gain
+B. Insiders seeking to gain access to funds for illicit purposes
+C. Opportunists seeking notoriety and face for personal gain
+D. Hacktivists seeking to make a political statement because of socio-economic factors
+
+
+
+Answer:  A
+
+
+62. The Chief Information Security Officer (CISO) suspects that a database administrator has been tampering
+with financial data to the administrator's advantage. Which of the following would allow a third-party consultant to conduct an on-site review of the administrator's activity?
+
+A. Separation of duties
+B. Job Rotation
+C. Continuous Monitoring
+D. Mandatory vacation
+
+
+
+Answer:  D
+
+
+63. A server (10.0.0.2) on the corporate network is experiencing a DoS from a number of marketing desktops that
+have been compromised and are connected to a separate network segment. The security engineer implements the following configuration on the management router:
+
+Router (config) # ip route 192.168.3.1 255.255.255.255 Null0
+Router (config) # route-map DATA
+Router (config-route-map) #match tag 101
+Router (config-route-map) #set ip next-hop 192.168.3.3
+Router (config-route-map) #set community no-export
+Router (config-router) #redistribute static route-map DATA
+Router (config) ip route 10.0.0.2 255.255.244.255 Null0 tag 101
+
+Which of the following is the engineer implementing?
+
+A. Remotely triggered black hole
+B. Route protection
+C. Port security
+D. Transport security
+E. Address space layout randomization
+
+
+
+Answer:  A
+
+
+64. A threat advisory alert was just emailed to the IT security staff. The alert references specific types of host
+operating systems that can allow an unauthorized person to access files on a system remotely. A fix was
+recently published, but it requires a recent endpoint protection engine to be installed prior to running the fix.
+
+Which of the following MOST likely need to be configured to ensure the systems are mitigated accordingly?
+(Select TWO).
+
+A. Antivirus
+B. HIPS
+C. Application Whitelisting
+D. Patch Management
+E. Group Policy Implementation
+F. Firmware Updates
+
+
+
+Answer:  A,B
+
+
+65. A consulting firm was hired to conduct a security assessment for a company. During the first stage a penetration tester used a tool to provide the following output:
+TCP 80 open
+TCP 443 open
+TCP 1434 filtered
+The penetration tester used a different tool made the following requests:
+
+GET /script/login.php?token=45$%MHT000MND876 GET /script/login.php?token=@#984DCSPQ%091DF
+
+Which of the following tools did the penetration tester use? (Select TWO)
+
+A. Protocol analyzer
+B. Port scanner
+C. Fuzzer
+D. Brute force
+E. Log analyzer
+F. HTTP interceptor
+
+
+
+Answer:  B,F
+
+
+66. A security analyst has been asked to create a list of external IT security concerns, which are applicable to the
+organization. The intent is to show the different types of external actors, their attack vectors, and the types of
+vulnerabilities that would cause business impact. The Chief Information Security Officer (CISO) will then
+present this list to the board to request funding for controls in areas that have insufficient coverage.
+
+Which of the following exercise types should the analyst perform?
+
+A. Summarize the most recently disclosed vulnerabilities
+B. Research industry best practices and the latest RFCs
+C. Undertake an external vulnerability scan and penetration test
+D. Conduct a threat modeling exercise
+
+
+
+Answer:  D
+
+
+67. A company has gone through a round of phishing attacks. More than 200 users have had their workstations
+infected because they clicked on a link on an email. An incident analysis has determined an executable ran and
+compromised the administrator account on each workstation. Management is demanding the information
+security team prevent this from happening again.
+
+Which of the following would BEST prevent this from happening again?
+
+A. Antivirus
+B. Patch management
+C. Log monitoring
+D. Application whitelisting
+E. Awareness training
+
+
+
+Answer:  E
+
+
+68. Engineers at a company believe a certain type of data should be protected from competitors, but the data
+owner insists the information is not sensitive. An information security engineer is implementing controls to
+secure the corporate SAN. The controls require dividing data into four groups: non-sensitive, sensitive but
+accessible, sensitive but export-controlled, and extremely sensitive.
+
+Which of the following actions should the engineer take regarding the data?
+
+A. label the data as extremely sensitive
+B. label the data as sensitive but accessible
+C. label the data as non-sensitive
+
+
+
+Answer:  C
+
+
+69. During a security assessment, activities were divided in to two phases: internal and external exploitation. The
+security assessment team set a hard time limit on external activities before moving to a compromised box
+within the enterprise perimeter.
+
+Which of the following method is the assessment team most likely to employ NEXT?
+
+A. Pivoting from the compromised, moving laterally through the enterprise, and trying to exfiltrate data and
+compromise devices
+B. Conducting a social engineering attack attempt with the goal of accessing the compromised box physically
+C. Exfiltrating network scans from the compromised box as a precursor to social media reconnaissance
+D. Open-source intelligence gathering to identify perimeter and scope to enable further system compromises
+
+
+
+Answer:  A
+
+
+70. A security analyst is reviewing the corporate MDM settings and notices some disabled settings, which
+consequently, permit users to download programs from untrusted developers and manually install them. After
+some conversations, it is confirmed that these settings were disabled to support the internal development of
+mobile applications. The security analyst is now recommending that developers and testers have a separate
+device profile allowing this, and that the rest of the organization's users do not have the ability to manually
+download and install untrusted applications.
+
+Which of the following settings should be logged to achieve the goal? (Select TWO)
+
+A. OTA Updates
+B. Remote Wiping
+C. Side loading
+D. sandboxing
+E. containerization
+F. signed applications
+
+
+
+Answer:  C,F
+
+
+71. An insurance company has two million customers and is researching the top transactions on its customer
+portal. It identifies that the top transaction is currently password reset. Due to users not remembering their secret questions, a large number of calls are consequently routed to the contact center for manual password resets. The business wants to develop a mobile application to improve customer engagement in the future, continue with a single factor of authentication, minimize management overhead of the solution, remove passwords, and eliminate to the contact center.
+
+Which of the following techniques would BEST meet the requirements? (Select TWO)
+
+A. Magic link sent to an email address
+B. Customer ID sent via push notification
+C. SMS with OTP sent to a mobile number
+D. Third-party social login
+E. Certificate sent to be installed on a device
+F. Hardware tokens sent to customers
+
+
+
+Answer:  C,E
+
+
+72. Due to a recent breach, the Chief Executive Officer (CEO) has requested the following activities be conducted
+during incident response planning:
+
+Involve business owners and stakeholders
+Create an application scenario
+Conduct a biannual verbal review of the incident response plan
+Report on the lessons learned and gaps identified.
+
+Which of the following exercises has the CEO requested?
+
+A. Parallel operations
+B. Full transition
+C. Internal review
+D. Tabletop
+E. Partial simulation
+
+
+
+Answer:  D
+
+
+73. A development manager is working with a software development group to assess the security of a new version
+of the organization's internally developed ERP tool. The organization prefers to not perform assessment activities following deployment, instead focusing on assessing security throughout the life cycle.
+
+Which of the following methods would BEST assess the security of the product?
+
+A. Static code analysis in the IDE environment
+B. Penetration testing of the UAT environment
+C. Vulnerability scanning of the production environment
+D. Penetration testing of the production environment
+E. Peer review prior to unit testing
+
+
+
+Answer:  A
+
+
+74. With which of the following departments should an engineer for a consulting firm coordinate when determining
+the control and reporting requirements for storage of sensitive, proprietary customer information?
+
+A. Human resources
+B. Financial
+C. Sales
+D. Legal counsel
+
+
+
+Answer:  D
+
+
+75. An advanced threat emulation engineer is conducting testing against a client's network. The engineer
+conducts the testing in as realistic a manner as possible. Consequently, the engineer has been gradually
+ramping up the volume of attacks over a long period of time.
+
+Which of the following combinations of techniques would the engineer MOST likely use in this testing? (Select
+THREE)
+
+A. Black box testing
+B. Gray box testing
+C. Code review
+D. Social engineering
+E. Vulnerability assessment
+F. Pivoting
+G. Self-assessment
+H. White teaming
+I. External auditing
+
+
+
+Answer:  A,E,F
+
+
+
+76. A security administrator wants to allow external organizations to cryptographically validate the company's
+domain name in email messages sent by employees.
+
+Which of the following should the security administrator implement?
+
+A. SPF
+B. S/MIME
+C. TLS
+D. DKIM
+
+
+
+Answer:  D
+
+
+77. An organization enables BYOD but wants to allow users to access the corporate email, calendar, and contacts
+from their devices. The data associated with the users' accounts is sensitive, and therefore, the organization wants to comply with the following requirements:
+
+Active full-device encryption
+Enabled remote-device wipe
+Blocking unsigned applications
+Containerization of email, calendar, and contacts
+
+Which of the following technical controls would BEST protect the data from attack or loss and meet the above
+requirements?
+
+A. Require frequent password changes and disable NFC
+B. Enforce device encryption and activate MAM
+C. Install a mobile antivirus application
+D. Configure and monitor devices with an MDM
+
+
+
+Answer:  D
+
+
+78. Users have been reporting unusual automated phone calls, including names and phone numbers, that appear
+to come down from devices internal to the company.
+
+Which of the following should the systems administrator do to BEST address this problem?
+
+A. Add an ACL to the firewall to block VoIP
+B. Change the settings on the phone system to use SIP-TLS
+C. Have the phones download new configurations over TFTP
+D. Enable QoS configuration on the phone VLAN
+
+
+
+
+Answer:  B
+
+
+79. A systems administrator receives an advisory email that a previously unknown exploit is being used in another
+country and the financial institutions have ceased operations while they find a way to respond to the attack.
+
+Which of the following BEST describes where the administrator should look to find information on the attack to determine if a response must be prepared for the systems? (Select TWO)
+
+A. Bug bounty websites
+B. Hacker forums
+C. Antivirus vendor websites
+D. Trade industry association websites
+E. CVE database
+F. Company's legal department
+
+
+
+
+Answer:  C,E
+
+
+80. After several industry competitors suffered data loss as a recent result of cyberattacks, the Chief Operating
+Officer (COO) of a company reached out to the information security manager to review the organization's
+security stance. As a result of the discussion, the COO wants the organization to meet the following criteria:
+
+Blocking of suspicious websites
+Prevention of attacks based on threat intelligence 
+Reduction in spam
+Identity-based reporting to meet regulatory compliance
+Prevention of viruses based on signature Protect applications from web-based threats
+
+Which of the following would be the BEST recommendation the information security manager could make?
+
+A. Reconfigure existing IPS resources.
+B. Implement a WAF.
+C. Deploy a SIEM solution.
+D. Deploy a UTM solution.
+E. Implement an EDR platform
+
+
+
+Answer:  D
+
+
+81. A Chief Security Officer (CSO) is reviewing the organization's incident response report from a recent incident.
+The details of the event indicate:
+
+1 A user received a phishing email that appeared to be a report from the organization's CRM tool
+2 The user attempted to access the CRM tool via a fraudulent web page but was unable to access the tool
+3 The user, unaware of the compromised account, did not report the incident and continued to use the CRM
+tool with the original credentials
+4 Several weeks later, the user reported anomalous activity within the CRM tool
+5 Following an investigation, it was determined the account was compromised and an attacker in another
+country had gained access to the CRM tool
+6 Following identification of corrupted data and successful recovery from the incident, a lessons learned
+activity was to be led by the CSO
+
+Which of the following would MOST likely have allowed the user to more quickly identify the unauthorized use of credentials by the attacker?
+
+A. Security awareness training
+B. Last login verification
+C. Log correlation
+D. Time-of -check controls
+E. Time-of-use controls
+F. WAYF-based authentication
+
+
+
+Answer:  B
+
+
+82. A breach was caused by an insider threat which customer PII was compromised. Following the breach, a lead
+security analysis is asked to determine which vulnerabilities the attacker used to access company resources.
+
+Which of the following should the analyst use to remediate the vulnerabilities?
+
+A. Protocol analyzer
+B. Root cause analysis
+C. Behavioral analytics
+D. Data leak prevention
+
+
+
+Answer:  D
+
+
+83. An organization is engaged in international business operations and is required to comply with various legal
+frameworks. In addition to changes in legal framework, which of the following is a primary purpose of a
+compliance management program?
+
+A. Following new requirements that result from contractual obligations
+B. Answering requests from auditors that relate to e-discovery
+C. Responding to changes in regulatory requirements
+D. Developing organizational policies that relate to hiring and termination procedures
+
+
+
+Answer:  C
+
+
+84. An organization just merged with an organization in another legal jurisdiction and must improve its network
+security posture in ways that do not require additional resources to implement data isolation. One recommendation is to block communication between endpoint PCs.
+
+Which of the following would be the BEST solution?
+
+A. Installing HIDS
+B. Configuring a host-based firewall
+C. Configuring EDR
+D. Implementing network segmentation
+
+
+
+Answer:  D
+
+
+85. The Chief Information Security Officer (CISO) for an organization wants to develop custom IDS rulesets
+faster, prior to new rules being released by IDS vendors.
+
+Which of the following BEST meets this objective?
+
+A. Identify a third-party source for IDS rules and change the configuration on the applicable IDSs to pull in the
+new rulesets
+B. Encourage cybersecurity analysts to review open-source intelligence products and threat database to
+generate new IDS rules based on those sources
+C. Leverage the latest TCP and UDP-related RFCs to arm sensors and IDSs with appropriate heuristics for
+anomaly detection
+D. Use annual hacking conventions to document the latest attacks and threats and then develop IDS rules to
+counter those threats
+
+
+
+Answer:  B
+
+
+86. A web developer has implemented HTML5 optimizations into a legacy web application.
+One of the modifications the web developer made was the following client-side optimization:
+localStorage.setItem(“session-cookie”, document.cookie);
+
+Which of the following should the security engineer recommend?
+
+A. Session Storage should be used so authorized cookies expire after the session ends
+B. Cookies should be marked as “secure” and “HttpOnly”
+C. Cookies should be scoped to a relevant domain/path
+D. Client-side cookies should be replaced by server-side mechanisms
+
+
+
+Answer:  D
+
+
+87. A project manager is working with a team that is tasked to develop software applications in a structured
+environment and host them in a vendor's cloud-based infrastructure. The organization will maintain responsibility for the software but will manage the underlying server applications.
+
+Which of the following does the organization plan to leverage?
+
+A. SaaS
+B. PaaS
+C. IaaS
+D. Hybrid cloud
+E. Network virtualization
+
+
+
+Answer: B
+
+
+88. A hospital’s security team recently determined its network was breached and patient data was accessed by an
+external entity. The Chief Information Security Officer (CISO) of the hospital approaches the executive
+management team with this information, reports the vulnerability that led to the breach has already been
+remediated, and explains the team is continuing to follow the appropriate incident response plan. The
+executive team is concerned about the hospital’s brand reputation and asks the CISO when the incident
+should be disclosed to the affected patients.
+
+Which of the following is the MOST appropriate response?
+
+A. When it is mandated by their legal and regulatory requirements
+B. As soon as possible in the interest of the patients
+C. As soon as the public relations department is ready to be interviewed
+D. When all steps related to the incident response plan are completed
+E. Upon the approval of the Chief Executive Officer (CEO) to release information to the public
+
+
+
+Answer:  A
+
+
+89. A regional business is expecting a severe winter storm next week. The IT staff has been reviewing corporate
+policies on how to handle various situations and found some are missing or incomplete. After reporting this gap in documentation to the information security manager, a document is immediately drafted to move various personnel to other locations to avoid downtime in operations.
+
+This is an example of:
+
+A. a disaster recovery plan
+B. an incident response plan
+C. a business continuity plan
+D. a risk avoidance plan
+
+
+
+Answer:  C
+
+
+90. An organization has recently deployed an EDR solution across its laptops, desktops, and server infrastructure.
+The organization's server infrastructure is deployed in an IaaS environment. A database within the nonproduction
+environment has been misconfigured with a routable IP and is communicating with a command & control server.
+
+Which of the following procedures should the security responder apply to the situation? (Select TWO).
+
+A. Contain the server
+B. Initiate a legal hold
+C. Perform a risk assessment
+D. Determine the data handling standard
+E. Disclose the breach to customers
+F. Perform an IOC sweep to determine impact
+
+
+
+Answer:  A,F
+
+
+91. The board of a financial services company has requested that the senior security analyst acts as a cybersecurity advisor in order to comply with recent federal legislation. The analyst is required to give a report on current cybersecurity and threat trends in the financial services industry at the next board meeting.
+
+Which of the following would be the BEST methods to prepare this report? (Select TWO)
+
+A. Review the CVE database for critical exploits over the past year
+B. Use social media to contact industry analyst
+C. Use intelligence gathered from Internet relay chat channels
+D. Request information from security vendors and government agencies
+E. Perform a penetration test of the competitor's network and share the results with the board
+
+
+
+Answer:  A,D
+
+
+92. A Chief Information Security Officer (CISO) is reviewing the results of a gap analysis with an outside
+cybersecurity consultant.
+The gap analysis reviewed all procedural and technical controls and found the following:
+
+High-impact controls not implemented: 4 out of 10
+Medium-impact controls not implemented: 63 out of 472
+Low-impact controls not implemented: 0 out of 1000
+The report also includes a cost-benefit analysis for each control gap.
+The analysis yielded the following information:
+Average high-impact control implementation cost: $15,000
+Probable ALE for each high-impact control gap: $95,000
+Average medium-impact control implementation cost: $6,250
+Probable ALE for each medium-impact control gap: $11,000
+Due to the technical construction and configuration of the corporate enterprise, slightly more than 50% of the
+medium-impact controls will take two years to fully implement.
+
+Which of the following conclusions could the CISO draw from the analysis?
+
+A. Too much emphasis has been placed on eliminating low-risk vulnerabilities in the past
+B. The enterprise security team has focused exclusively on mitigating high-level risks
+C. Because of the significant ALE for each high-risk vulnerability, efforts should be focused on those controls
+D. The cybersecurity team has balanced residual risk for both high and medium controls
+
+
+
+Answer:  C
+
+
+93. A large company with a very complex IT environment is considering a move from an on-premises, internally
+managed proxy to a cloud-based proxy solution managed by an external vendor. The current proxy provides
+caching, content filtering, malware analysis, and URL categorization for all staff connected behind the proxy.
+Staff members connect directly to the Internet outside of the corporate network. The cloud-based version of
+the solution would provide content filtering, TLS decryption, malware analysis, and URL categorization. After
+migrating to the cloud solution, all internal proxies would be decommissioned.
+
+Which of the following would MOST likely change the company's risk profile?
+
+A. 1 There would be a loss of internal intellectual knowledge regarding proxy configurations and application
+data flows
+2 There would be a greater likelihood of Internet access outages due to lower resilience of cloud gateways
+3 There would be data sovereignty concerns due to changes required in routing and proxy PAC files
+
+B. 1 The external vendor would have access to inbound and outbound gateway traffic
+2 The service would provide some level of protection for staff working from home
+3 Outages would be likely to occur for systems or applications with hard-coded proxy information
+
+C. 1 The loss of local caching would dramatically increase ISP charges and impact existing bandwidth
+2 There would be a greater likelihood of Internet access outages due to lower resilience of cloud gateways
+3 There would be a loss of internal intellectual knowledge regarding proxy configurations and application
+data flows
+
+D. 1 Outages would be likely to occur for systems or applications with hard-coded proxy information
+2 The service would provide some level of protection for staff working from home
+3 Malware detection times would decrease due to third-party management of the service
+
+
+
+Answer:  B
+
+
+94. Which of the following describes a contract that is used to define the various levels of maintenance to be
+provided by an external business vendor in a secure environment?
+
+A. NDA
+B. MOU
+C. BIA
+D. SLA
+
+
+
+Answer:  D
+
+
+95. A security administrator was informed that a server unexpectedly rebooted. The administrator received an
+export of syslog entries for analysis:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Which of the following does the log sample indicate? (Choose two)
+
+A. A root user performed an injection attack via kernel module
+B. Encrypted payroll data was successfully decrypted by the attacker
+C. Jsmith successfully used a privilege escalation attack
+D. Payroll data was exfiltrated to an attacker-controlled host
+E. Buffer overflow in memory paging caused a kernel panic
+F. Syslog entries were lost due to the host being rebooted
+
+
+
+Answer:  C,D
+
+
+96. A security consultant is improving the physical security site of a sensitive site and takes pictures of the
+unbranded building to include the report. Two weeks later the security consultant misplaces the phone, which
+only has one hour of charge left on it. The person who finds the phone removes the MicroSD card in an
+attempt to discover the owner to return it.
+The person extracts the following data from the phone and EXIF data from some files:
+
+DCIM Images folder
+Audio books folder Torrentz
+My TAX.xls
+Consultancy HR Manual.doc Camera: SM-G950F Exposure time: 1/60 s
+Location: 3500 Lacey Road USA
+
+Which of the following BEST describes the security problem?
+
+A. MicroSD is not encrypted and also contains personal data
+B. MicroSD contains a mixture of personal and work data
+C. MicroSD is not encrypted and contains geotagging information
+D. MicroSD contains pirated software and is not encrypted
+
+
+
+Answer:  C
+
+
+97. An engineer is assisting with the design of a new virtualized environment that will house critical company
+services and reduce the datacenter’s physical footprint. The company has expressed concern about the
+integrity of operating systems and wants to ensure a vulnerability exploited in one datacenter segment would
+not lead to the compromise of all others.
+
+Which of the following design objectives should the engineer complete to BEST mitigate the company’s concerns? 
+(Choose two.)
+
+
+A. Deploy virtual desktop infrastructure with an OOB management network
+B. Employ the use of vTPM with boot attestation
+C. Leverage separate physical hardware for sensitive services and data
+D. Use a community CSP with independently managed security services
+E. Deploy to a private cloud with hosted hypervisors on each physical machine
+
+
+
+Answer:  A,C
+
+
+98. After investigating virus outbreaks that have cost the company $1,000 per incident, the company’s Chief
+Information Security Officer (CISO) has been researching new antivirus software solutions to use and be fully
+supported for the next two years. The CISO has narrowed down the potential solutions to four candidates that
+meet all the company’s performance and capability requirements:
+
+
+
+
+
+
+
+
+Using the table above, which of the following would be the BEST business-driven choice among five possible
+solutions?
+
+A. Product A
+B. Product B
+C. Product C
+D. Product D
+E. Product E
+
+
+
+Answer:  D
+
+
+99. A security administrator wants to implement two-factor authentication for network switches and routers. The
+solution should integrate with the company's RADIUS server, which is used for authentication to the network
+infrastructure devices. The security administrator implements the following:
+a HOTP service in installed on the RADIUS server
+the RADIUS server is configured to require the HOTP service for authentication
+The configuration is successfully tested using a software supplicant and enforces across all network devices.
+Network administrators report they are unable to log onto the network devices because they are not being
+prompted for the second factor.
+
+Which of the following should be implemented to BEST resolve this issue?
+
+A. Replace the password requirements with the second factor. Network administrators will enter their
+username and the enter the token in place of their password in the password field
+
+B. Configure the RADIUS server to accept the second factor appended to the password. Network
+administrators will enter a password followed by their token in the password field
+
+C. Reconfigure network devices to prompt for username, password, and a token. Network administrators will
+enter their usernames and password, and then they will enter the token
+
+D. Install a TOTP service on the RADIUS server in addition to the HOTP service. Use HOTP on older
+devices that do not support two-factor authentication. Network administrators will use a web portal to log
+onto these devices
+
+
+
+Answer:  C
+
+
+100. An organization is preparing to develop a business continuity plan. The organization is required to meet
+regulatory requirements relating to confidentiality and availability, which are well-defined. Management has
+expressed concern following initial meetings that the organization is not fully aware of the requirements
+associated with the regulations.
+
+Which of the following would be MOST appropriate for the project manager to solicit additional resources for during this phase of the project?
+
+A. After-action reports
+B. Gap assessment
+C. Security requirements traceability matrix
+D. Business impact assessment
+E. Risk analysis
+
+
+
+Answer:  B
+
+
+
+101. An information security manager conducted a gap analysis, which revealed a 75% implementation of security
+controls for high-risk vulnerabilities, 90% for medium vulnerabilities, and 10% for low-risk vulnerabilities To
+create a road map to close the identified gaps, the assurance team reviewed the likelihood of exploitation of
+each vulnerability and the business impact of each associated control.
+
+To determine which control to implement, which of the following is the MOST important to consider?
+
+A. KPI
+B. KRI
+C. GRC
+D. BIA
+
+
+
+Answer:  C
+
+
+
+102. In the past, the risk committee at Company A has shown an aversion to even minimal amounts of risk
+acceptance. A security engineer is preparing recommendations regarding the risk of a proposed project
+introducing legacy ICS equipment. The project will introduce a minor vulnerability into the enterprise. This
+vulnerability does not significantly expose the enterprise to risk and would be expensive to insure against.
+
+Which of the following strategies should the engineer recommend be approved FIRST?
+
+A. Avoid
+B. Mitigate
+C. Transfer
+D. Accept
+
+
+
+Answer:  A
+
+
+
+103. A medical facility wants to purchase mobile devices for doctors and nurses. To ensure accountability, each
+individual will be assigned a separate mobile device. Additionally, to protect patient's health information, management has identified the following requirements:
+Data must be encrypted
+The device must be disabled if it leaves the facility
+The device must be disabled when tampered with
+
+Which of the following technologies would BEST support these requirements? (Select TWO)
+
+A. eFuse
+B. NFC
+C. GPS
+D. Biometric
+E. USB 4.1
+F. MicroSD
+
+
+
+Answer:  A,C
+
+
+
+104. A technician is validating compliance with organizational policies. The user and machine accounts in the AD
+are not set to expire, which is non-compliant.
+
+Which of the following network tools would provide this type of information?
+
+A. SIEM server
+B. IDS appliance
+C. SCAP scanner
+D. HTTP interceptor
+
+
+
+Answer:  C
+
+
+
+105. A security incident responder discovers an attacker has gained access to a network and has overwritten key
+system files with backdoor software.
+The server was reimaged and patched offline.
+
+Which of the following tools should be implemented to detect similar attacks? (Choose two)
+
+A. Vulnerability scanner
+B. TPM
+C. Host-based firewall
+D. File integrity monitor
+E. NIPS
+
+
+
+Answer:  A,D
+
+
+
+106. An engineer needs to provide access to company resources for several offshore contractors.
+The contractors require:
+Access to a number of applications, including internal websites
+Access to databases data and the ability to manipulate it
+The ability to log into Linux and Windows servers remotely.
+
+Which of the following remote access technologies are the BEST choices to provide all of this access securely? (Select TWO)
+
+A. VTC
+B. VRRP
+C. VLAN
+D. VDI
+E. VPN
+F. Telnet
+
+
+
+Answer:  D,E
+
+
+
+107. A forensics analyst suspect that a buffer overflow exists in a kernel module. The analyst executes the
+following command:
+dd if=/dev/ram of=/tmp/mem.dmp
+The analyst then reviews the associated output:
+^34^#AAAAAAAAAAAAAAAAAAAAAAAAAAAAA/bin/bash^21^03#45
+However, the analyst is unable to find any evidence of the running shell.
+
+Which of the following is the MOST likely reason the analyst cannot find a process ID for the shell?
+
+A. The NX bit is enabled.
+B. The system uses ASLR.
+C. The shell is obfuscated.
+D. The code uses dynamic libraries
+
+
+
+Answer:  C
+
+
+
+108. A new cluster of virtual servers has been set up in a lab environment and must be audited before being
+allowed on the production network. The security manager needs to ensure unnecessary services are disabled
+and all system accounts are using strong credentials.
+
+Which of the following tools should be used? (Select TWO).
+
+A. Fuzzer
+B. SCAP scanner
+C. Packet analyzer
+D. Password cracker
+E. Network enumerator
+F. SIEM
+
+
+
+Answer:  B,F
+
+
+
+109. A government contractor was the victim of a malicious attack that resulted in the theft of sensitive information.
+An analyst's subsequent investigation of sensitive systems led to the following discoveries:
+There was no indication of the data owner's or user's accounts being compromised
+No database activity outside of previous baselines was discovered
+All workstations and servers were fully patched for all known vulnerabilities at the time of the attack
+It was likely not an insider threat, as all employees passed polygraph tests?
+
+Given the scenario, which of the following is the MOST likely attack that occurred?
+
+A. The attacker harvested the hashed credentials of an account within the database administrators’ group
+after dumping the memory of a compromised machine. With these credentials, the attacker was able to
+access the database containing sensitive information directly.
+
+B. An account, which belongs to an administrator of virtualization infrastructure, was compromised with a
+successful phishing attack. The attacker used these credentials to access the virtual machine manager
+and made a copy of the target virtual machine image. The attacker later accessed the image offline to
+obtain sensitive information.
+
+C. A shared workstation was physically accessible in a common area of the contractor's office space and was
+compromised by an attacker using a USB exploit, which resulted in gaining a local administrator account.
+Using the local administrator credentials, the attacker was able to move laterally to the server hosting the
+database with sensitive information.
+
+D. After successfully using a watering hole attack to deliver an exploit to a machine, which belongs to an
+employee of the contractor, an attacker gained access to a corporate laptop. With this access, the attacker
+then established a remote session over VPN connection with the server hosting the database of sensitive
+information.
+
+
+
+Answer:  B
+
+
+
+110. A systems administrator has installed a disk wiping utility on all computers across the organization and
+configured it to perform a seven-pass wipe and an additional pass to overwrite the disk with zeros. The
+company has also instituted a policy that requires users to erase files containing sensitive information when
+they are no longer needed. To ensure the process provides the intended results, an auditor reviews the following content from a randomly selected decommissioned hard disk:
+
+0
+0
+0
+000000000000000000000000000qjkehd
+
+Which of the following should be included in the auditor's report based on the above findings?
+
+A. The hard disk contains bad sectors
+B. The disk has been degaussed
+C. The data represents part of the disk BIOS
+D. Sensitive data might still be present on the hard drives
+
+
+
+
+Answer:  D
+
+
+
+111. A recent assessment identified that several users’ mobile devices are running outdated versions of endpoint
+security software that do not meet the company’s security policy. Which of the following should be performed to ensure the users can access the network and meet the company’s security requirements?
+
+A. Vulnerability assessment
+B. Risk assessment
+C. Patch management
+D. Device quarantine
+E. Incident management
+
+
+
+Answer:  D
+
+
+
+112. A security engineer is working with a software development team.
+The engineer is tasked with ensuring all security requirements are adhered to by the developers.
+Which of the following BEST describes the contents of the supporting document the engineer is creating?
+
+A. a series of ad-hoc tests that each verify security control functionality of the entire system at once
+B. a series of discrete tasks that, when viewed in total, can be used to verify and document each individual
+constraint from the SRTM
+C. a set of formal methods that apply to one or more of the programming languages used on the
+development project
+D. a methodology to verify each security control in each unit of developed code prior to committing the code
+
+
+
+Answer:  B
+
+
+
+113. A newly hired security analyst has joined an established SOC team. Not long after going through corporate
+orientation, a new attack method on web-based applications was publicly revealed. The security analyst
+immediately brings this new information to the team lead, but the team lead is not concerned about it.
+
+Which of the following is the MOST likely reason for the team lead's position?
+
+A. The organization has accepted the risks associated with web-based threats
+B. The attack type does not meet the organization's threat model
+C. Web-based applications are on isolated network segments
+D. Corporate policy states that NIPS signatures must be updated every hour
+
+
+
+
+Answer:  C
+
+
+
+114. A security architect is designing a system to satisfy user demand for reduced transaction time, increased
+security and message integrity, and improved cryptographic security. The resultant system will be used in an
+environment with a broad user base where many asynchronous transactions occur every minute and must be
+publicly verifiable.
+
+Which of the following solutions BEST meets all of the architect objectives?
+
+A. An internal key infrastructure that allows users to digitally sign transaction logs
+B. An agreement with an entropy-as-a-service provider to increase the amount of randomness in generated
+keys
+C. A publicly verified hashing algorithm that allows revalidation of message integrity at a future date
+D. An open distributed transaction ledger that requires proof of work to append entries
+
+
+
+
+Answer:  D
+
+
+
+115. A company's chief cybersecurity architect wants to configure mutual authentication to access an internal
+payroll website. The architect has asked the administration team to determine the configuration that would
+provide the best defense against MITM attacks.
+
+Which of the following implementation approaches would BEST support the architect's goals?
+
+A. Utilize a challenge-response prompt as required input at username/password entry
+B. Implement TLS and require the client to use its own certificate during handshake
+C. Configure a web application proxy and institute monitoring of HTTPS transactions
+D. Install a reverse proxy in the corporate DMZ configured to decrypt TLS sessions
+
+
+
+Answer:  B
+
+
+
+116. Legal authorities notify a company that its network has been compromised for the second time in two years.
+The investigation shows the attackers were able to use the same vulnerability on different systems in both
+attacks.
+Which of the following would have allowed the security team to use historical information to protect against the second attack?
+
+A. Key risk indicators
+B. Lessons learned
+C. Recovery point objectives
+D. Tabletop exercise
+
+
+
+Answer:  B
+
+
+
+117. An agency has implemented a data retention policy that requires tagging data according to type before storing
+it in the data repository. The policy requires all business emails be automatically deleted after two years.
+During an open records investigation, information was found on an employee's work computer concerning a
+conversation that occurred three years prior and proved damaging to the agency's reputation.
+
+Which of the following MOST likely caused the data leak?
+
+A. The employee manually changed the email client retention settings to prevent deletion of emails
+B. The file that contained the damaging information was mistagged and retained on the server for longer than
+it should have been
+C. The email was encrypted and an exception was put in place via the data classification application
+D. The employee saved a file on the computer's hard drive that contained archives of emails, which were
+more than 2 years old
+
+
+
+Answer:  D
+
+
+
+118. A penetration test is being scoped for a set of web services with API endpoints. The API will be hosted on
+existing web application servers. Some of the new APIs will be available to unauthenticated users, but some
+will only be available to authenticated users.
+
+Which of the following tools or activities would the penetration tester MOST likely use or do during the engagement? (Select TWO)
+
+A. Static code
+B. Intercepting proxy
+C. Port scanner
+D. Reverse engineering
+E. Reconnaissance gathering
+F. User acceptance testing
+
+
+
+Answer:  B,D
+
+
+
+119. A company is acquiring incident response and forensic assistance from a managed security service provider
+in the event of a data breach. The company has selected a partner and must now provide required documents to be reviewed and evaluated.
+
+Which of the following documents would BEST protect the company and ensure timely assistance? (Select
+TWO).
+
+A. RA
+B. BIA
+C. NDA
+D. RFI
+E. RFQ
+F. MSA
+
+
+
+Answer:  C,F
+
+
+
+120. A security administrator is hardening a TrustedSolaris server that processes sensitive data.
+The data owner has established the following security requirements:
+The data is for internal consumption only and shall not be distributed to outside individuals
+The systems administrator should not have access to the data processed by the server
+The integrity of the kernel image is maintained
+
+Which of the following host-based security controls BEST enforce the data owner's requirements? (Select
+THREE).
+
+A. SELinux
+B. DLP
+C. HIDS
+D. Host-based firewall
+E. Measured boot
+F. Data encryption
+G. Watermarking
+
+
+
+Answer:  B,E,F
+
+
+
+121. The finance department has started to use a new payment system that requests strict PII security restrictions
+on various network devices. The company decides to enforce the restrictions and configure all devices
+appropriately.
+
+Which of the following risk response strategies is being used?
+
+A. Avoid
+B. Mitigate
+C. Transfer
+D. Accept
+
+
+
+Answer:  B
+
+
+
+122. A newly hired systems administrator is trying to connect a new and fully updated, but very customized,
+Android device to access corporate resources. However, the MDM enrollment process continually fails. The
+administrator asks a security team member to look into the issue.
+
+Which of the following is the MOST likely reason the MDM is not allowing enrollment?
+
+A. the OS version is not compatible
+B. the OEM is prohibited
+C. the device does not support FDE
+D. the device is rooted
+
+
+
+Answer:  D
+
+
+
+123. A company wants to extend its help desk availability beyond business hours. The Chief Information Officer
+(CIO) decides to segment the help desk with a third-party service that will answer calls and provide Tier 1
+problem resolution, such as password resets and remote assistance.
+The security administrator implements the following firewall change:
+
+PERMIT TCP FROM 74.23.2.4 TO 192.168.20.20 PORT 80
+PERMIT TCP FROM 74.23.2.4 TO 192.168.20.20 PORT 636
+PERMIT TCP FROM 74.23.2.4 TO 192.168.20.20 PORT 5800
+PERMIT TCP FROM 74.23.2.4 TO 192.168.20.20 PORT 1433
+The administrator provides the appropriate path and credentials to the third-party company.
+
+Which of the following technologies is MOST likely being used to provide access to the third company?
+
+A. LDAP
+B. WAYF
+C. OpenID
+D. RADIUS
+E. SAML
+
+
+
+Answer:  A
+
+
+
+124. While attending a meeting with the human resources department, an organization's information security officer
+sees an employee using a username and password written on a memo pad to log into a specific server. When
+the information security officer inquires further as to why passwords are being written down, the response is
+that there are too many passwords to remember for all the different services the human resources department
+is required to use. Additionally, each password has specific complexity requirements and different expiration
+time frames.
+
+Which of the following would be the BEST solution for the information security officer to recommend?
+
+A. Utilizing MFA
+B. Implementing SSO
+C. Deploying 802.1x
+D. Pushing SAML adoption
+E. Implementing TACACS
+
+
+
+Answer:  B
+
+
+
+125. After a large organization has completed the acquisition of a smaller company, the smaller company must
+implement new host-based security controls to connect its employees' devices to the network.
+Given that the network requires 802.1X EAP-PEAP to identify and authenticate devices, which of the following
+should the security administrator do to integrate the new employees' devices into the network securely?
+
+A. Distribute a NAC client and use the client to push the company's private key to all the new devices
+B. Distribute the device connection policy and a unique public/private key pair to each new employee's
+device
+C. Install a self-signed SSL certificate on the company's RADIUS server and distribute the certificate's public
+key to all new client devices
+D. Install an 802.1X supplicant on all new devices and let each device generate a self-signed certificate to
+use for network access
+
+
+
+Answer:  D
+
+
+
+126. A security controls assessor intends to perform a holistic configuration compliance test of networked assets.
+The assessor has been handed a package of definitions provided in XML format, and many of the files have
+two common tags within them: “<object object_ref=… />” and “<state state_ref=… />”.
+
+Which of the following tools BEST supports the use of these definitions?
+
+A. HTTP interceptor
+B. Static code analyzer
+C. SCAP scanner
+D. XML fuzzer
+
+
+
+Answer:  C
+
+
+127. A company has entered into a business agreement with a business partner for managed human resources
+services. The Chief Information Security Officer (CISO) has been asked to provide documentation that is
+required to set up a business-to-business VPN between the two organizations.
+
+Which of the following is required in this scenario?
+
+A. ISA
+B. BIA
+C. SLA
+D. RA
+
+
+
+Answer:  A
+
+
+128. Two new technical SMB security settings have been enforced and have also become policies that increase
+secure communications.
+Network Client: Digitally sign communication
+Network Server: Digitally sign communication
+A storage administrator in a remote location with a legacy storage array, which contains time sensitive data,
+reports employees can no longer connect to their department shares.
+
+Which of the following mitigation strategies should an information security manager recommend to the data owner?
+
+A. Accept the risk, reverse the settings for the remote location, and have the remote location file a risk
+exception until the legacy storage device can be upgraded
+B. Accept the risk for the remote location, and reverse the settings indefinitely since the legacy storage
+device will not be upgraded
+C. Mitigate the risk for the remote location by suggesting a move to a cloud service provider
+Have the remote location request an indefinite risk exception for the use of cloud storage
+D. Avoid the risk, leave the settings alone, and decommission the legacy storage device
+
+
+
+
+Answer:  A
+
+
+129. A security administrator is troubleshooting RADIUS authentication issues for a newly implemented controller based wireless deployment. The RADIUS server contains the following information in its logs:
+A RADIUS message was received from the invalid RADIUS client IP address 10.35.55.10
+Based on this information, the administrator reconfigures the RADIUS server, which results in the following log
+data:
+An Access-Request was received from RADIUS client 10.35.55.10 with a Message-Authenticator attribute that
+is not valid.
+To correct this error message, the administrator makes an additional change to RADIUS server.
+
+Which of the following did the administrator reconfigure on the RADIUS server? (Select TWO)
+
+A. Added the controller address as an authorized client
+B. Registered the RADIUS server to the wireless controller
+C. Corrected a mismatched shared secret
+D. Renewed the expired client certificate
+E. Reassigned the RADIUS policy to the controller
+F. Modified the client authentication method
+
+
+
+Answer:  A,C
+
+
+130. A security engineer is performing an assessment again for a company.
+The security engineer examines the following output from the review:
+Password complexity: Disabled
+Require authentication from a domain controller before sign-in: Enabled
+Allow guest user access: Enabled
+Allow anonymous enumeration of groups: Disabled
+
+Which of the following tools is the engineer utilizing to perform this assessment?
+
+A. Vulnerability scanner
+B. SCAP scanner
+C. Port scanner
+D. Interception proxy
+
+
+
+Answer:  B
+
+
+131. A security administrator is updating a company's SCADA authentication system with a new application
+To ensure interoperability between the legacy system and the new application, which of the following
+stakeholders should be involved in the configuration process before deployment? (Select TWO)
+
+A. Network engineer
+B. Service desk personnel
+C. Human resources administrator
+D. Incident response coordinator
+E. Facilities manager
+F. Compliance manager
+
+
+
+Answer:  A,E
+
+
+
+132. Given the following output from a security tool in Kali:
+[12:17:41] dumping options:
+
+filename: </usr/share/sectools/scans> State: <8>
+lineo: <56>
+literals: <74>
+sequences: [34}
+symbols: [0}
+req_del: <200>
+mseq_len: <1024> plugin: <none> s_syms: <0>
+literal [1] =[jf2d43kaj4i9eahfh8fbiud8sd8sdhfdfdfhj9]
+
+Which of the following types of tools is being used?
+
+A. Log reduction
+B. Network enumerator
+C. Fuzzer
+D. SCAP scanner
+
+
+
+Answer:  D
+
+
+133. A large enterprise with thousands of users is experiencing a relatively high frequency of malicious activity
+from the insider threats. Much of the activity appears to involve internal reconnaissance that results in
+targeted attacks against privileged users and network file shares.
+
+Given this scenario, which of the following would MOST likely prevent or deter these attacks? (Choose two.)
+
+A. Conduct role-based training for privileged users that highlights common threats against them and covers
+best practices to thwart attacks
+
+B. Increase the frequency at which host operating systems are scanned for vulnerabilities and decrease the
+amount of time permitted between vulnerability identification and the application of corresponding patches
+
+C. Enforce command shell restrictions via group policies for all workstations by default to limit which native
+operating system tools are available for use
+
+D. Modify the existing rules of behavior to include an explicit statement prohibiting users from enumerating
+user and file directories using available tools and/or accessing visible resources that do not directly pertain
+to their job functions
+
+E. For all workstations, implement full-disk encryption and configure UEFI instances to require complex
+passwords for authentication
+
+F. Implement application blacklisting enforced by the operating systems of all machines in the enterprise
+
+
+
+
+
+Answer:  C,D
+
+
+134. A company has decided to lower costs by conducting an internal assessment on specific devices and various
+internal and external subnets. The assessment will be done during regular office hours, but it must not affect
+any production servers.
+
+Which of the following would MOST likely be used to complete the assessment? (Select TWO)
+
+A. Agent-based vulnerability scan
+B. Black-box penetration testing
+C. Configuration review
+D. Social engineering
+E. Malware sandboxing
+F. Tabletop exercise
+
+
+
+Answer:  A,C
+
+
+135. A security analyst is reviewing the following packet capture of communication between a host and a
+company's router:
+
+1 192.168.1.10 -> 10.5.10.1 icmp echo request 33 bytes sent ABCDEFGHIJKLMNOPQRSTUVWXYZ
+2 10.5.10.1 ->192.168.1.10 icmp echo reply 34 bytes sent ABCDEFGHIJKLMNOPQRSTUVWXYZ%
+MDKF8
+
+Which of the following actions should the security analyst take to remove this vulnerability?
+
+A. Update the router code
+B. Implement a router ACL
+C. Disconnect the host from the network.
+D. Install the latest antivirus software
+E. Deploy a network-based IPS
+
+
+
+Answer:  B
+
+
+136. A company monitors the performance of all web servers using WMI. A network administrator informs the
+security engineer that web servers hosting the company's client-facing portal are running slowly today. After
+some investigation. the security engineer notices a large number of attempts at enumerating host information
+via SNMP from multiple IP addresses.
+
+Which of the following would be the BEST technique for the security engineer to employ in an attempt to prevent reconnaissance activity?
+
+A. Install a HIPS on the web servers
+B. Disable inbound traffic from offending sources
+C. Disable SNMP on the web servers
+D. Install anti-DDoS protection the DMZ
+
+
+
+Answer:  A
+
+
+137. A company contracts a security engineer to perform a penetration test of its client-facing web portal.
+
+Which of the following activities would be MOST appropriate?
+
+A. Use a protocol analyzer against the site to see if data input can be replayed from the browser
+B. Scan the website through an interception proxy and identify areas for the code injection
+C. Scan the site with a port scanner to identify vulnerable services running on the web server
+D. Use network enumeration tools to identify if the server is running behind a load balancer
+
+
+
+Answer:  B
+
+
+138. A security assessor is working with an organization to review the policies and procedure associated with
+managing the organization's virtual infrastructure. During a review of the virtual environment, the assessor
+determines the organization is using servers to provide more than one primary function, which violates a
+regulatory requirement. The assessor reviews hardening guides and determines policy allows for this
+configuration.
+
+It would be MOST appropriate for the assessor to advise the organization to:
+
+A. segment dual-purpose systems on a hardened network segment with no external access
+B. assess the risks associated with accepting non-compliance with regulatory requirements
+C. update system implementation procedures to comply with regulations
+D. review regulatory requirements and implement new policies on any newly provisioned servers
+
+
+
+Answer:  C
+
+
+139. During a security event investigation, a junior analyst fails to create an image of a server's hard drive before
+removing the drive and sending it to the forensics analyst. Later, the evidence from the analysis is not usable
+in the prosecution of the attackers due to the uncertainty of tampering.
+
+Which of the following should the junior analyst have followed?
+
+A. Continuity of operations
+B. Chain of custody
+C. Order of volatility
+D. Data recovery
+
+
+
+Answer:  B
+
+
+140. The Chief Executive Officer (CEO) of a small startup company has an urgent need for a security policy and
+assessment to address governance, risk management, and compliance. The company has a resource constrained
+IT department, but has no information security staff. The CEO has asked for this to be completed
+in three months.
+
+Which of the following would be the MOST cost effective solution to meet the company's needs?
+
+A. Select one of the IT personnel to obtain information security training, and then develop all necessary
+policies and document in-house
+
+B. Accept all risks associated with information security, and then bring up the issue again at next year's
+annual board meeting
+
+C. Release an RFP to consultancy firms, and then select the most appropriate consultant who can fulfill the
+requirements
+
+D. Hire an experienced, full-time information security team to run the startup company's information security
+Department
+
+
+
+Answer:  C
+
+
+141. The Chief Information Security Officer (CISO) has asked the security team to determine whether the
+organization is susceptible to a zero-day exploit utilized in the banking industry and whether attribution is
+possible. The CISO has asked what process would be utilized to gather the information, and then wants to
+apply signature controls to stop these kinds of attacks in the future.
+
+Which of the following are the MOST appropriate ordered steps to take to meet the CISO's request?
+
+A. 1 Perform ongoing research of best practices
+2 Determine current vulnerabilities and threats
+3 Apply Big Data techniques
+4 Use antivirus control
+
+B. 1 Apply artificial intelligence algorithms for detection
+2 Inform the CERT team
+3 Research threat intelligence and potential adversaries
+4 Utilize threat intelligence to apply Big Data techniques
+
+C. 1 Obtain the latest IOC's from open source repositories
+2 Perform a sweep across the network to identify positive matches
+3 Sandbox any suspicious files
+4 Notify the CERT team to apply a future proof threat model
+
+D. 1 Analyze current threat intelligence
+2 Utilize information sharing to obtain the latest industry IOCs
+3 Perform a sweep across the network to identify positive matches
+4 Apply machine learning algorithms
+
+
+
+Answer:  D
+
+
+142. An organization has employed the services of an auditing firm to perform a gap assessment in preparation for
+an upcoming audit. As part of the gap assessment, the auditor supporting the assessment recommends the
+organization engage with other industry partners to share information about emerging attacks to organizations
+in the industry in which the organization functions.
+
+Which of the following types of information could be drawn from such participation?
+
+A. Threat modeling
+B. Risk assessment
+C. Vulnerability data
+D. Threat intelligence
+E. Risk metrics
+F. Exploit frameworks
+
+
+
+Answer:  D
+
+
+143. A company has hired an external security consultant to conduct a thorough review of all aspects of corporate
+security. The company is particularly concerned about unauthorized access to its physical offices resulting in
+network compromises.
+
+Which of the following should the consultant recommend be performed to evaluate potential risks?
+
+A. The consultant should attempt to gain access to physical offices through social engineering and then
+attempt data exfiltration
+B. The consultant should be granted access to all physical access control systems to review logs and
+evaluate the likelihood of the threat
+C. The company should conduct internal audits of access logs and employee social media feeds to identify
+potential insider threats
+D. The company should install a temporary CCTV system to detect unauthorized access to physical offices
+
+
+
+
+Answer:  A
+
+
+144. A user asks a security practitioner for recommendations on securing a home network. The user recently
+purchased a connected home assistant and multiple loT devices in an effort to automate the home. Some of
+the loT devices are wearables, and others are installed in the user's automobiles. The current home network is
+configured as a single flat network behind an ISP-supplied router. The router has a single IP address and the
+router performs NAT on incoming traffic to route it to individual devices.
+
+Which of the following security controls would address the user's privacy concerns and provide the BEST level
+of security for the home network?
+
+A. Ensure all loT devices are configured in a geofencing mode so the devices do not work when removed
+from the home network. Disable the home assistant unless actively using it, and segment the network so
+each loT device has it own segment
+
+B. Install a firewall capable of cryptographically separating network traffic, require strong authentication to
+access all loT devices, and restrict network access for the home assistant based on time-of-day restrictions
+
+C. Segment the home network to separate network traffic from users and the loT devices, ensure security
+settings on the home assistant support no or limited recording capability, and install firewall rules on the
+router to restrict traffic to the home assistant as much as possible
+
+D. Change all default password on the loT devices, disable Internet access for the loT devices and the home
+assistant, obtain routable IP addresses for all devices, and implement IPv6 and IPSec protections on all
+network traffic
+
+
+
+
+Answer:  C
+
+
+145. During a criminal investigation, the prosecutor submitted the original hard drive from the suspect's computer
+as evidence. The defense objected during the trial proceedings, and the evidence was rejected.
+
+Which of the following practices should the prosecutor's forensics team have used to ensure the suspect's data would be admissible as evidence? (Select TWO).
+
+A. Follow chain of custody best practices
+B. Create an identical image of the original hard drive, store the original securely, and then perform forensics
+only on the imaged drive
+C. Use forensics software on the original hard drive and present the backup as evidence
+D. Create a tape backup of the original hard drive and present the backup as evidence
+E. Create an exact image of the original hard drive for forensics purposes, and then place the original back in
+Service
+
+
+
+Answer:  A,B
+
+
+146. A SaaS-based email service provider often receives reports from legitimate customers that their IP netblocks
+are on blacklists and they cannot send email. The SaaS has confirmed that affected customers typically
+have IP addresses within broader network ranges and some abusive customers within the same IP ranges
+may have performed spam campaigns.
+
+Which of the following actions should the SaaS provider perform to minimize legitimate customer impact?
+
+A. Inform the customer that the service provider does not have any control over third-party blacklist entries.
+The customer should reach out to the blacklist operator directly
+
+B. Perform a takedown of any customer accounts that have entries on email blacklists because this is a
+strong indicator of hostile behavior
+
+C. Work with the legal department and threaten legal action against the blacklist operator if the netblocks are
+not removed because this is affecting legitimate traffic
+
+D. Establish relationship with a blacklist operators so broad entries can be replaced with more granular entries
+and incorrect entries can be quickly pruned
+
+
+
+
+Answer:  D
+
+
+147. An organization is considering the use of a thin client architecture as it moves to a cloud-hosted environment.
+A security analyst is asked to provide thoughts on the security advantages of using thin clients and virtual
+workstations.
+
+Which of the following are security advantages of the use of this combination of thin clients and virtual workstations?
+
+A. Malicious insiders will not have the opportunity to tamper with data at rest and affect the integrity of the
+system
+
+B. Thin client workstations require much less security because they lack storage and peripherals that can be
+easily compromised, and the virtual workstations are protected in the cloud where security is outsourced
+
+C. All thin clients use TPM for core protection, and virtual workstations use vTPM for core protection, with
+both equally ensuring a greater security advantage for a cloud-hosted environment
+
+D. Malicious users will have reduced opportunities for data extractions from their physical thin client workstations, thus reducing the effectiveness of local attacks
+
+
+
+Answer:  D
+
+
+148. A systems administrator recently joined an organization and has been asked to perform security assessment
+of controls on the organization's file servers, which contain client data from a number of sensitive systems.
+The administrator needs to compare documented access requirements to the access list implemented within
+the file system.
+Which of the following is MOST likely to be reviewed during the assessment? (Select TWO)
+
+A. Data classification matrix
+B. Security requirements traceability matrix
+C. Data ownership matrix
+D. Roles matrix
+E. Data design document
+F. Data access policies
+
+
+
+Answer:  B,F
+
+
+149. The code snippet below controls all electronic door locks to a secure facility in which the doors should only fail
+open in an emergency. In the code, "criticalValue" indicates if an emergency is underway:
+try {
+if (criticalValue) openDoors = true
+else
+OpenDoors = false
+} catch (e) {
+OpenDoors = true
+}
+
+Which of the following is the BEST course of action for a security analyst to recommend to the software developer?
+
+A. Rewrite the software to implement fine-grained, conditions-based testing
+B. Add additional exception handling logic to the main program to prevent doors from being opened
+C. Apply for a life-safety-based risk exception allowing secure doors to fail open
+D. Rewrite the software exception handling routine to fail in a secure state
+
+
+
+Answer:  D
+
+
+150. A recent penetration test identified that a web server has a major vulnerability. The web server hosts a critical
+shipping application for the company and requires 99.99% availability. Attempts to fix the vulnerability would
+likely break the application. The shipping application is due to be replaced in the next three months.
+
+Which of the following would BEST secure the web server until the replacement web server is ready?
+
+A. Patch management
+B. Antivirus
+C. Application firewall
+D. Spam filters
+E. HIDS
+
+
+
+Answer:  C
+
+
+151. An infrastructure team is at the end of a procurement process and has selected a vendor. As part of the final
+negotiations, there are a number of outstanding issues, including:
+
+1 Indemnity clauses have identified the maximum liability
+2 The data will be hosted and managed outside of the company’s geographic allocation
+3 The number of users accessing the system will be small, and no sensitive data will be hosted in the solution
+
+As the security consultant on the project, which of the following should the project’s security consultant
+recommend as the NEXT step?
+
+A. Develop a security exemption, as it does not meet the security policies
+B. Mitigate the risk by asking the vendor to accept the in-country privacy principles
+C. Require the solution owner to accept the identified risks and consequences
+D. Review the entire procurement process to determine the lessons learned
+
+
+
+
+Answer:  C
+
+
+152. The Chief Executive Officers (CEOs) from two different companies are discussing the highly sensitive
+prospect of merging their respective companies together. Both have invited their Chief Information Officers
+(CIOs) to discern how they can securely and digitally communicate, and the following criteria are collectively
+determine:
+
+Must be encrypted on the email servers and clients
+Must be okay to transmit over unsecure Internet connections
+
+Which of the following communication methods would be BEST to recommend?
+
+A. Force TLS between domains
+B. Enable STARTTLS on both domains
+C. Use PGP-encrypted emails
+D. Switch both domains to utilize DNSSEC
+
+
+
+Answer:  C
+
+
+153. During the decommissioning phase of a hardware project, a security administrator is tasked with ensuring no
+sensitive data is released inadvertently. All paper records are scheduled to be shredded in a crosscut
+shredder, and the waste will be burned. The system drives and removable media have been removed prior to
+e-cycling the hardware.
+
+Which of the following would ensure no data is recovered from the system drives once they are disposed of?
+
+A. Overwriting all HDD blocks with an alternating series of data
+B. Physically disabling the HDDs by removing the drive head
+C. Demagnetizing the hard drive using a degausser
+D. Deleting the UEFI boot loaders from each HDD
+
+
+
+Answer:  C
+
+
+154. To prepare for an upcoming audit, the Chief Information Security Officer (CISO) asks for all 1200
+vulnerabilities of production servers to be remediated. The security engineer must determine which
+vulnerabilities represent real threats that can be exploited so resources can be prioritized to mitigate the most
+dangerous risks. The CISO wants the security engineer to act in the same manner as would an external threat,
+while using vulnerability scan results to prioritize any actions.
+
+Which of the following approaches is being described?
+
+A. Blue Team
+B. Red Team
+C. Black Box
+D. White Team
+
+
+
+Answer:  A
+
+
+155. A security analyst is classifying data based on input from data owners and other stakeholders. The analyst has
+identified three data types:
+
+1 Financially sensitive data
+2 Project data
+3 Sensitive project data
+
+The analyst proposes that the data be protected in two major groups, with further access control separating
+the financial data from the sensitive project data. The normal project data will be stored in a separate, less
+secure location. Some stakeholders are concerned about the recommended approach and insist that
+commingling data from different sensitive projects would leave them vulnerable to industry espionage.
+
+Which of the following is the BEST course of action for the analyst to recommend?
+
+A. Conduct a quantitative evaluation of the risks associated with commingling the data and reject or accept
+the concerns raised by the stakeholders
+
+B. Meet with the affected stakeholders and determine which security controls would be sufficient to address
+the newly raised risks
+
+C. Use qualitative methods to determine aggregate risk scores of each project and use the derived scores to
+more finely segregate the data
+
+D. Increase the number of available data storage to provide enough capacity for physical separation of nonsensitive
+project data
+
+
+
+
+Answer:  B
+
+
+156. A security engineer is employed by a hospital that was recently purchased by a corporation. Throughout the
+acquisition process, all data on the virtualized file servers must be shared by departments within both
+organizations.
+
+The security engineer considers data ownership to determine:
+
+A. the amount of data to be moved
+B. the frequency of data backups
+C. which users will have access to which data
+D. when the file server will be decommissioned
+
+
+
+Answer:  C
+
+
+157. A security architect is implementing security measures in response to an external audit that found
+vulnerabilities in the corporate collaboration tool suite. The report identified the lack of any mechanism to
+provide confidentiality for electronic correspondence between users and between users and group mailboxes.
+
+Which of the following controls would BEST mitigate the identified vulnerability?
+
+A. Issue digital certificates to all users, including owners of group mailboxes, and enable S/MIME
+B. Federate with an existing PKI provider, and reject all non-signed emails
+C. Implement two-factor email authentication, and require users to hash all email messaged upon receipt
+D. Provide digital certificates to all systems, and eliminate the user group or shared mailboxes
+
+
+
+Answer:  A
+
+
+158. A SQL database is no longer accessible online due to a recent security breach...
+An investigation reveals that unauthorized access to the database was possible due to an SQL injection
+vulnerability.
+To prevent this type of breach in the future, which of the following security controls should be put in place
+before bringing the database back online? (Select TWO).
+
+A. Secure storage policies
+B. Browser security updates
+C. Input validation
+D. Web application firewall
+E. Secure coding standards
+F. Database activity monitoring
+
+
+
+Answer:  C,F
+
+
+159. A security architect has been assigned to a new digital transformation program. The objectives are to provide
+better capabilities to customers and reduce costs. The program has highlighted the following requirements:
+
+1 Long-lived sessions are required, as users do not log in very often.
+2 The solution has multiple SPs, which include mobile and web applications.
+3 A centralized IdP is utilized for all customer digital channels.
+4 The applications provide different functionality types such as forums and customer portals.
+5 The user experience needs to be the same across both mobile and web-based applications.
+
+Which of the following would BEST improve security while meeting those requirements?
+
+A. Social login to IdP, securely store the session cookies, and implement one-time passwords sent to the
+mobile device
+B. Certificate-based authentication to IdP, securely store access tokens, and implemented secure push
+notifications
+C. Username and password authentication to IdP, securely store refresh tokens, and implement context aware
+authentication
+D. Username and password authentication to SP, securely store Java web tokens, and implement SMS OTPs
+
+
+
+Answer:  B
+
+
+160. While conducting a BIA for a proposed acquisition, the IT integration team found that both companies
+outsource CRM services to competing and incompatible third-party cloud services. The decision has been
+made to bring the CRM service in-house, and the IT team has chosen a future solution.
+
+With which of the following should the Chief Information Security Officer (CISO) be MOST concerned?
+(Select TWO)
+
+A. Data remnants
+B. Sovereignty
+C. Compatible services
+D. Storage encryption
+E. Data migration
+F. Chain of custody
+
+
+
+Answer:  A,E
+
+
+161. The risk subcommittee of a corporate board typically maintains a master registry of the most prominent risks
+to the company.
+
+A centralized holistic view of risks is particularly important to the corporate Chief Information Security Officer
+(CISO) because:
+
+A. IT systems are maintained in silos to minimize interconnected risks and provide clear risk boundaries used
+to implement compensating controls
+
+B. risk introduced by a system in one business unit can affect other business units in ways in which the
+individual business units are not aware
+
+C. corporate general counsel requires a single system boundary to determined overall corporate risk
+exposure
+
+D. major risk identified by the subcommittee merit the prioritized allocation of scarce funding to address
+cybersecurity concerns
+
+
+
+
+Answer:  B
+
+
+162. An internal staff member logs into an ERP platform and clicks on a record. The browser URL changes to:
+URL: http//192.168.0.100/ERP/accountId=5&action=SELECT
+
+Which of the following is the MOST likely vulnerability in this ERP platform?
+
+A. Brute forcing of account credentials
+B. Plain-text credentials transmitted over the Internet
+C. Insecure direct objects reference
+D. SQL injection of ERP back end
+
+
+
+Answer:  C
+
+
+163. A system owner has requested support from data owners to evaluate options for the disposal of equipment
+containing sensitive data. Regulatory requirements state the data must be rendered unrecoverable via logical means or physically destroyed.
+
+Which of the following factors is the regulation intended to address?
+
+A. Sovereignty
+B. E-waste
+C. Remanence
+D. Deduplication
+
+
+
+Answer:  C
+
+
+164. A hospital uses a legacy electronic medical record system that requires multicast for traffic between the
+application servers and databases on virtual hosts that support segments of the application. Following a switch
+upgrade, the electronic medical record is unavailable despite physical connectivity between the hypervisor
+and the storage being in place. The network team must enable multicast traffic to restore access to the
+electronic medical record. The ISM states that the network team must reduce the footprint of multicast traffic
+on the network.
+
+
+
+
+
+
+
+
+
+Using the above information, on which VLANs should multicast be enabled?
+
+A. VLAN201, VLAN202, VLAN400
+B. VLAN201, VLAN202, VLAN700
+C. VLAN201, VLAN202, VLAN400, VLAN680, VLAN700
+D. VLAN400, VLAN680, VLAN700
+
+
+
+Answer:  D
+
+
+165. To meet an SLA, which of the following documents should be drafted, defining the company's internal
+interdependent unit responsibilities and delivery timelines?
+
+A. BPA
+B. OLA
+C. MSA
+D. MOU
+
+
+
+Answer:  B
+
+
+166. An architect was recently hired by a power utility to increase the security posture of the company’s power
+generation and distribution sites. Upon review, the architect identifies legacy hardware with highly vulnerable
+and unsupported software driving critical operations. These systems must exchange data with each other,
+be highly synchronized, and pull from the Internet time sources.
+
+Which of the following architectural decisions would BEST reduce the likelihood of a successful attack without harming operational capability? (Choose two.)
+
+A. Isolate the systems on their own network
+B. Install a firewall and IDS between systems and the LAN
+C. Employ own stratum-0 and stratum-1 NTP servers
+D. Upgrade the software on critical systems
+E. Configure the systems to use government-hosted NTP servers
+
+
+
+Answer:  B,E
+
+
+167. A penetration tester notices special characters in a database table. The penetration tested has configured the
+browser to use a HTTP interceptor to verify that the front-end user registration web form accepting invalid
+input in the user's age field. The developer was notified and asked to fix this issue.
+
+Which of the following is the MOST secure solution for the developer to implement?
+
+A. IF $AGE == "!@#$%^&*()_+:{}[]" THEN ERROR
+B. IF $AGE = [1234567890] {1,3} THEN CONTINUE
+C. IF $AGE != "a-bA-Z!@#$%^&*()_+<>?":{}[]" THEN CONTINUE
+D. IF $AGE == [1-0] {0,2} THEN CONTINUE
+
+
+
+Answer:  B
+
+
+168. A recent overview of the network's security and storage applications reveal a large amount of data that needs
+to be isolated for security reasons. Below are the critical applications and devices configured on the network:
+
+Firewall
+Core switches RM server
+Virtual environment NAC solution
+The security manager also wants data from all critical applications to be aggregated to correlate events from
+multiple sources.
+
+Which of the following must be configured in certain applications to help ensure data aggregation and data isolation are implemented on the critical applications and devices? (select TWO)
+
+A. Routing tables
+B. Log forwarding
+C. Data remnants
+D. Port aggregation
+E. NIC teaming
+F. Zones
+
+
+
+Answer:  B,F
+
+
+169. Following a recent network intrusion, a company wants to determine the current security awareness of all its
+employees.
+
+Which of the following is the BEST way to test awareness?
+
+A. Conduct a series of security training events with comprehensive tests at the end
+B. Hire an external company to provide an independent audit of the network security posture
+C. Review the social media of all employees to see how much proprietary information is shared
+D. Send an email from a corporate account, requesting users to log onto a website with their enterprise
+Account
+
+
+
+Answer:  A
+
+
+170. A networking administrator was recently promoted to security administrator in an organization that handles
+highly sensitive data. The Chief Information Security Officer (CISO) has just asked for all IT security
+personnel to review a zero-day vulnerability and exploit for specific application servers to help mitigate the
+organization's exposure to that risk.
+
+Which of the following should the new security administrator review to gain more information? (Select
+THREE)
+
+A. CVE database
+B. Recent security industry conferences
+C. Security vendor pages
+D. Known vendor threat models
+E. Secure routing metrics
+F. Server's vendor documentation
+G. Verified security forums
+H. NetFlow analytics
+
+
+
+Answer:  A,C,G
+
+
+171. After embracing a BYOD policy, a company is faced with new security challenges from unmanaged mobile
+devices and laptops. The company’s IT department has seen a large number of the following incidents:
+
+Duplicate IP addresses
+Rogue network devices
+Infected systems probing the company’s network
+
+Which of the following should be implemented to remediate the above issues? (Choose two)
+
+A. Port security
+B. Route protection
+C. NAC
+D. HIPS
+E. NIDS
+
+
+
+
+Answer:  B,C
+
+
+172. As part of the development process for a new system, the organization plans to perform requirements analysis
+and risk assessment. The new system will replace a legacy system, which the organization has used to perform data analytics.
+
+Which of the following is MOST likely to be part of the activities conducted by management during this phase of the project?
+
+A. Static code analysis and peer review of all application code
+B. Validation of expectations relating to system performance and security
+C. Load testing the system to ensure response times are acceptable to stakeholders
+D. Design reviews and user acceptance testing to ensure the system has been deployed properly
+E. Regression testing to evaluate interoperability with the legacy system during the deployment
+
+
+
+Answer:  B
+
+
+173. An engineer maintains a corporate-owned mobility infrastructure, and the organization requires that all web
+browsing using corporate-owned resources be monitored.
+
+Which of the following would allow the organization to meet its requirement? (Choose two)
+
+A. Exempt mobile devices from the requirement, as this will lead to privacy violations
+B. Configure the devices to use an always-on IPSec VPN
+C. Configure all management traffic to be tunneled into the enterprise via TLS
+D. Implement a VDI solution and deploy supporting client apps to devices
+E. Restrict application permissions to establish only HTTPS connections outside of the enterprise boundary
+
+
+
+Answer:  B,D
+
+
+174. A Chief Information Security Officer (CISO) is reviewing the controls in place to support the organization's
+vulnerability management program. The CISO finds patching and vulnerability scanning polices and
+procedures are in place. However, the CISO is concerned the organization is siloed and is not maintaining
+awareness of new risks to the organization. The CISO determines systems administrators need to participate
+in industry security events.
+
+Which of the following is the CISO looking to improve?
+
+A. Vendor diversification
+B. System hardening standards
+C. Bounty programs
+D. Threat awareness
+E. Vulnerability signatures
+
+
+
+Answer:  D
+
+
+175. An administrator has noticed mobile devices from an adjacent company on the corporate wireless network.
+Malicious activity is being reported from those devices. To add another layer of security in an enterprise
+environment, an administrator wants to add contextual authentication to allow users to access enterprise
+resources only while present in corporate buildings.
+
+Which of the following technologies would accomplish this?
+
+A. Port security
+B. Rogue device detection
+C. Bluetooth
+D. GPS
+
+
+
+Answer:  B
+
+
+176. During the deployment of a new system, the implementation team determines that APIs used to integrate the
+new system with a legacy system is not functioning properly. Further investigation shows there is a misconfigured encryption algorithm used to secure data transfers between systems.
+
+Which of the following should the project manager use to determine the source of the defined algorithm in use?
+
+A. Code repositories
+B. Security requirements traceability matrix
+C. Software development life cycle
+D. Data design diagram
+E. Roles matrix
+F. Implementation guide
+
+
+
+Answer:  B
+
+
+177. A company wants to perform analysis of a tool that is suspected to contain a malicious payload.
+A forensic analyst is given the following snippet:
+^32^ [34fda19 { fd^43gfd/home/user/lib/module.so.343jk^rfw { 342fds43g
+
+Which of the following did the analyst use to determine the location of the malicious payload?
+
+A. Code deduplicators
+B. Binary reverse-engineering
+C. Fuzz testing
+D. Security containers
+
+
+
+Answer:  B
+
+
+178. One of the objectives of a bank is to instill a security awareness culture.
+
+Which of the following are techniques that could help achieve this? (Select TWO)
+
+A. Blue teaming
+B. Phishing simulation
+C. Lunch-and-learn
+D. Random audits
+E. Continuous monitoring
+F. Separation of duties
+
+
+
+Answer:  B,C
+
+
+179. The marketing department has developed a new marketing campaign involving significant social media
+outreach. The campaign includes allowing employees and customers to submit blog posts and pictures of their day-to-day exercises at the company. The information security manager has been asked to provide an informative letter to all participants regarding the security risks and how to avoid privacy and operational security issues.
+
+Which of the following is the MOST important information to reference in the letter?
+
+A. After-action reports from prior incidents
+B. Social engineering techniques
+C. Company policies and employee NDAs
+D. Data classification processes
+
+
+
+Answer:  C
+
+
+180. A government organization operates and maintains several ICS environments. The categorization of one of the ICS environments led to a moderate baseline. The organization has compiled a set of applicable security controls based on this categorization. Given that this is a unique environment, which of the following should the organization do NEXT to determine if other security controls should be considered?
+
+A. Check for any relevant or required overlays
+B. Review enhancements within current control set
+C. Modify to a high-baseline set of controls
+D. Perform continuous monitoring
+
+
+
+Answer:  A
+
+
+181. An information security officer is responsible for one secure network and one office network. Recent
+intelligence suggests there is an opportunity for attackers to gain access to the secure network due to similar
+login credentials across networks. To determine the users who should change their information, the information security officer uses a tool to scan a file with hashed values on both networks and receives the following data:
+
+Corporate Network Secure Network
+james.bond asHU8$1bg jbond asHU8$1bg
+tom.jones wit4njyt%! tom.jones wit4njyt%!
+dade.murphy mUrpHTIME7 d.murph3 t%w38T9)n
+herbie.hancock hh2016# hhanco hh2016!#2
+suzy.smith 1Ll*#HFadf ssmith 1Ll*#HFadf
+
+Which of the following tools was used to gather this information from the hashed values in the file?
+
+A. Vulnerability scanner
+B. Fuzzer
+C. MD5 generator
+D. Password cracker
+E. Protocol analyzer
+
+
+
+Answer:  C
+
+
+182. A security engineer is designing a system in which offshore, outsourced staff can push code from the
+development environment to the production environment securely. The security engineer is concerned with
+data loss, while the business does not want to slow down its development process.
+
+Which of the following solutions BEST balances security requirements with business need?
+
+A. Set up a VDI environment that prevents copying and pasting to the local workstations of outsourced staff
+members
+B. Install a client-side VPN on the staff laptops and limit access to the development network
+C. Create an IPSec VPN tunnel from the development network to the office of the outsourced staff
+D. Use online collaboration tools to initiate workstation-sharing sessions with local staff who have access to
+the development network.
+
+
+
+Answer:  B
+
+
+183. A security engineer must establish a method to assess compliance with company security policies as they
+apply to the unique configuration of individual endpoints, as well as to the shared configuration policies of
+common devices.
+
+
+
+
+
+
+
+Which of the following tools is the security engineer using to produce the above output?
+
+A. Vulnerability scanner
+B. SIEM
+C. Port scanner
+D. SCAP scanner
+
+
+
+Answer:  B
+
+
+184. A team is at the beginning stages of designing a new enterprise-wide application. The new application will
+have a large database and require a capital investment in hardware. The Chief Information Officer (CIO) has
+directed the team to save money, reduce the reliance on the datacenter, and the vendor must specialize in
+hosting large databases in the cloud.
+
+Which of the following cloud-hosting options would BEST meet these needs?
+
+A. Multi-tenancy SaaS
+B. Hybrid IaaS
+C. Single-tenancy PaaS
+D. Community IaaS
+
+
+
+Answer:  B
+
+
+185. An administrator is working with management to develop policies related to the use of cloud-based resources
+that contain corporate data. Management plans to require some control over organizational data stored on
+personal devices, such as tablets.
+
+Which of the following controls would BEST support management's policy?
+
+A. MDM
+B. Sandboxing
+C. Mobile tokenization
+D. FDE
+E. MFA
+
+
+
+Answer:  A
+
+
+186. A security analyst sees some suspicious entries in a log file from a web server website, which has a form that
+allows customers to leave feedback on the company's products. The analyst believes a malicious actor is scanning the web form. To know which security controls to put in place, the analyst first needs to determine the type of activity occurring to design a control. Given the log below:
+
+Timestamp SourceIP CustName PreferredContact Prod Name Comments
+Monday 10:00:04 10.14.34.55 aaaaa Phone Widget1 None left
+Monday 10:00:04 10.14.34.55 bbbbb Phone Widget1 None left
+Monday 10:00:05 10.14.34.55 ccccc Phone Widget1 ../../etc/
+passwd
+Monday 10:01:03 10.14.34.55 ddddd Phone Widget1 None left
+Monday 10:01:04 10.14.34.55 eeeee Phone Widget1 None left
+Monday 10:01:05 10.14.34.55 fffff Phone Widget1 1=1
+Monday 10:03:05 172.16.34.20 Joe Phone Widget30 Love the
+Widget
+Monday 10:04:01 10.14.34.55 ggggg Phone Widget 1 <script>
+Monday 10:05:05 10.14.34.55 hhhhh Phone Widget1 wget cookie
+Monday 10:05:05 10.14.34.55 iiiii Phone Widget1 None left
+Monday 10:05:06 10.14.34.55 jjjjj Phone Widget1 None left
+
+Which of the following is the MOST likely type of activity occurring?
+
+A. SQL injection
+B. XXS scanning
+C. Fuzzing
+D. Brute forcing
+
+
+
+Answer:  A
+
+
+187. An organization's Chief Financial Officer (CFO) was the target of several different social engineering attacks
+recently. The CFO has subsequently worked closely with the Chief Information Security Officer (CISO) to
+increase awareness of what attacks may look like. An unexpected email arrives in the CFO's inbox from a
+familiar name with an attachment.
+
+Which of the following should the CISO task a security analyst with to determine whether or not the attachment is safe?
+
+A. Place it in a malware sandbox
+B. Perform a code review of the attachment
+C. Conduct a memory dump of the CFO's PC
+D. Run a vulnerability scan on the email server
+
+
+
+Answer:  A
+
+
+188. Given the following code snippet:
+
+<FORM ACTION="http://192.168.51.10/cgi-bin/order.pl" method="post">
+<input type=hidden name="price" value="199.99">
+<input type=hidden name="prd_id" value="X190">
+QUANTITY: <input type=text name="quant" size=3 maxlength=3 value=1>
+</FORM>
+
+Of which of the following is this snipped an example?
+
+A. Data execution prevention
+B. Buffer overflow
+C. Failure to use standard libraries
+D. Improper field usage
+E. Input validation
+
+
+
+Answer:  D
+
+
+189. A network engineer is upgrading the network perimeter and installing a new firewall, IDS, and external edge
+router. The IDS is reporting elevated UDP traffic and the internal routers are reporting high utilization, while
+the firewall utilization does not show abnormal patterns.
+
+Which of the following is the BEST solution?
+
+A. Reconfigure the firewall to block external UDP traffic
+B. Establish a security baseline on the IDS
+C. Block echo reply traffic at the firewall
+D. Modify the edge router to not forward broadcast traffic
+
+
+
+Answer:  D
+
+
+190. An organization is in the process of integrating its operational technology and information technology areas.
+As part of the integration, some of the cultural aspects it would like to see include more efficient use of resources during change windows, better protection of critical infrastructure, and the ability to respond to incidents.
+The following observations have been identified:
+
+1 The ICS supplier has specified that any software installed will result in lack of support.
+2 There is no documented trust boundary defined between the SCADA and corporate networks.
+3 Operational technology staff have to manage the SCADA equipment via the engineering workstation
+4 There is a lack of understanding of what is within the SCADA network
+Which of the following capabilities would BEST improve the security position?
+
+A. VNC, router, and HIPS
+B. SIEM, VPN, firewall
+C. Proxy, VPN, WAF
+D. IDS, NAC, and log monitoring
+
+
+
+Answer:  B
+
+
+191. A penetration tester has been contracted to conduct a physical assessment of a site
+
+Which of the following is the MOST plausible method of social engineering to be conducted during this engagement?
+
+A. Randomly calling customer employees and posing as a help desk technician requiring user password to
+resolve issues
+B. Posing as a copier service technician and indicating the equipment had “phoned home” to alert the
+technician for a service call
+C. Simulating an illness while at a client location for a sales call and then recovering once listening devices
+are installed
+D. Obtaining fake government credentials and impersonating law enforcement to gain access to a company
+Facility
+
+
+
+Answer:  B
+
+
+192. A security analyst is attempting to break into a client's secure network. The analyst was not given prior information about the client, except for a block of public IP addresses that are currently is use. After network enumeration, the analyst's NEXT step is to perform:
+
+A. A gray-box penetration test
+B. A risk analysis
+C. A vulnerability assessment
+D. An external security audit
+E. A red team exercise
+
+
+
+Answer:  A
+
+
+193. A company is developing requirements for a customized OS build that will be used in an embedded
+environment. The company procured hardware that is capable of reducing the likelihood of successful buffer
+overruns while executables are processing.
+
+Which of the following capabilities must be included for the OS to take advantage of this critical hardware based countermeasure?
+
+A. Application whitelisting
+B. NX/XN bit
+C. ASLR
+D. TrustZone
+E. SCP
+
+
+
+Answer:  B
+
+
+194. Which of the following is the GREATEST security concern with respect to BYOD?
+
+A. The filtering of sensitive data out of data flows at geographic boundaries
+B. removing potential bottlenecks in data transmission paths
+C. the transfer of corporate data onto mobile corporate devices
+D. the migration of data into and out of the network in an uncontrolled manner
+
+
+
+Answer:  D
+
+
+195. An engineer is evaluating the control profile to assign to a system containing PII, financial, and proprietary
+data
+
+Data Type Confidentiality Integrity Availability
+PII High Medium Low
+Proprietary High High Medium
+Competitive High Medium Medium
+Industrial Low Low High
+Financial Medium High Low
+
+Based on the data classification table above, which of the following BEST describes the overall classification?
+A. High confidentiality, high availability
+B. High confidentiality, medium availability
+C. Low availability, low confidentiality
+D. High integrity, low availability
+
+
+
+Answer:  B
+
+
+196. Given the following:
+// TODO - should this be odbc or jdbc?
+var odbcString = getParameterByName ("queryString", "dbConnector"); doc.innerHTML = "DB connector:
+<b>" + odbcString + "</b>"; document.body.appendChild (doc);
+
+Which of the following vulnerabilities is present in the above code snippet?
+
+A. Disclosure of database credential
+B. SQL-based string concatenation
+C. DOM-based injection
+D. Information disclosure in comments
+
+
+
+Answer:  B
+
+
+197. A security manager recently categorized an information system. During the categorization effort, the manager
+determined the loss of integrity of a specific information type would impact business significantly. Based on
+this, the security manager recommends the implementation of several solutions.
+
+Which of the following, when combined, would BEST mitigate this risk? (Choose TWO)
+
+A. Access control
+B. Whitelisting
+C. Signing
+D. Validation
+E. Boot attestation
+
+
+
+Answer:  C,D
+
+
+198. A security analyst is inspecting pseudocode of the following multithreaded application:
+
+1. perform daily ETL of data
+1.1 validate that yesterday's data model file exists
+1.2 validate that today's data model file does not exist
+1.2 extract yesterday's data model
+1.3 transform the format
+1.4 load the transformed data into today's data model file
+1.5 exit
+
+Which of the following security concerns is evident in the above pseudocode?
+
+A. Time of check/time of use
+B. Resource exhaustion
+C. Improper storage of sensitive data
+D. Privilege escalation
+
+
+
+Answer:  A
+
+
+199. A software development team has spent the last 18 months developing a new web-based front-end that will
+allow clients to check the status of their orders as the proceed through manufacturing. The marketing department schedules a launch party to present the new application to the client base in two weeks. Before the launch, the
+security team discovers numerous flaws that may introduce dangerous vulnerabilities, allowing direct access
+to a database used by manufacturing. The development team did not plan to remediate these vulnerabilities
+during development.
+
+Which of the following SDLC practices should the development team have followed?
+
+
+A. Implementing regression testing
+B. Completing user acceptance testing
+C. Verifying system design documentation
+D. Using an SRTM
+
+
+
+Answer:  D
+
+
+200. A Chief Information Officer (CIO) publicly announces the implementation of a new financial system. As part of a security assessment that includes a social engineering task, which of the following tasks should be conducted to demonstrate the BEST means to gain information to use for a report on social vulnerability details about the financial system?
+
+
+A. Call the CIO and ask for an interview, posing as a job seeker interested in an open position
+B. Compromise the email server to obtain a list of attendees who responded to the invitation who is on the IT
+staff
+C. Notify the CIO that, through observation at events, malicious actors can identify individuals to befriend
+D. Understand the CIO is a social drinker, and find the means to befriend the CIO at establishments the CIO
+Frequents
+
+
+
+Answer:  D
